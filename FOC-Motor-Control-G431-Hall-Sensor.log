@@ -1,0 +1,682 @@
+2023-12-02 18:36:03,969 DEBUG [WB_to_MX.lambda$run_gui_mode$0] Arguments: [-mx_timeout, -1, -pack, assets/MotorControlPack/MotorControl.zip, -exp, templates/wb-defines_where_and_what.txt, -ftl, templates/wb_ioc_template.ftl, -xdm, C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\FOC-Motor-Control-G431-Hall-Sensor.wbdef, -ioc, C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\FOC-Motor-Control-G431-Hall-Sensor.ioc]
+2023-12-02 18:36:03,975 DEBUG [ArgsValue.lambda$retrieve$2] CLI_ARG[ftl]: templates/wb_ioc_template.ftl
+2023-12-02 18:36:03,976 DEBUG [ArgsValue.lambda$retrieve$2] CLI_ARG[exp]: templates/wb-defines_where_and_what.txt
+2023-12-02 18:36:03,976 DEBUG [ArgsValue.lambda$retrieve$2] CLI_ARG[xdm]: C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\FOC-Motor-Control-G431-Hall-Sensor.wbdef
+2023-12-02 18:36:03,977 DEBUG [ArgsValue.lambda$retrieve$2] CLI_ARG[ioc]: C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\FOC-Motor-Control-G431-Hall-Sensor.ioc
+2023-12-02 18:36:03,977 DEBUG [ArgsValue.lambda$retrieve$2] CLI_ARG[pack]: assets/MotorControlPack/MotorControl.zip
+2023-12-02 18:36:03,977 DEBUG [ArgsValue.lambda$retrieve$2] CLI_ARG[mx_timeout]: -1
+2023-12-02 18:36:03,977 DEBUG [ArgsValue.retrieve] {xdm=C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\FOC-Motor-Control-G431-Hall-Sensor.wbdef, updftl=templates/wb_ioc_mc-middleware.ftl, mx_timeout=-1, exp=templates/wb-defines_where_and_what.txt, ioc=C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\FOC-Motor-Control-G431-Hall-Sensor.ioc, pack=assets/MotorControlPack/MotorControl.zip, ftl=templates/wb_ioc_template.ftl}
+2023-12-02 18:36:04,111 DEBUG [WB_to_MX.run] Targeted MCU family = G4
+2023-12-02 18:36:04,120 DEBUG [WB_to_MX.run] Minimum associated CubeMx to the `6.0.0-a0` targeted MCU family is `G4`
+2023-12-02 18:42:07,184 DEBUG [EnvironmentChecker.checkPack] STM32CubeMX.Version: 6.8.0-RC4
+2023-12-02 18:42:07,189 DEBUG [RetrieveFirmwareVersion.from_zip] Trying to read Firmware version from zipped version Pack: C:\Program Files (x86)\STMicroelectronics\MC_SDK_6.1.2\Utilities\PC_Software\STMCWB\assets\MotorControlPack\MotorControl.zip
+2023-12-02 18:42:07,257 DEBUG [RetrieveFirmwareVersion.minimum_supporte_version] minimum_supporte_version MotorControlFirmware.Version: 6.1.0-Full
+2023-12-02 18:42:07,262 DEBUG [PackInfoFactory.deploy_MCPack_to_MxRepo] Deployment strategy class: VersionedFolderStyle_MCPackDeployer
+2023-12-02 18:42:07,263 DEBUG [PackInfoFactory.deploy_MCPack_to_MxRepo] Expected MC Pack 6.1.2-Full already deployed
+2023-12-02 18:42:07,292 DEBUG [DataSetUpdater.update] Updating data set
+2023-12-02 18:42:07,294 DEBUG [DataSetUpdater.update] Update done
+2023-12-02 18:42:07,295 INFO  [IocGenerator.logModulesVersionInfo] Version info: 
+2023-12-02 18:42:07,351 INFO  [IocGenerator.logModulesVersionInfo]   MC Workbench       : 6.1.2
+2023-12-02 18:42:07,351 INFO  [IocGenerator.logModulesVersionInfo]   WB_to_Mx           : 6.1.0.template-22-12-05
+2023-12-02 18:42:07,352 INFO  [IocGenerator.logModulesVersionInfo]   STM32CubeMX        : 6.8.0
+2023-12-02 18:42:07,353 INFO  [IocGenerator.logModulesVersionInfo]   MC Firmware Library: 6.1.2-Full
+2023-12-02 18:42:07,353 INFO  [IocGenerator.logModulesVersionInfo] 
+Generation options: 
+2023-12-02 18:42:07,354 INFO  [IocGenerator.logModulesVersionInfo]   Target Toolchain   : ST STM32CubeIDE
+2023-12-02 18:42:07,354 INFO  [IocGenerator.logModulesVersionInfo]   Target Driver      : HAL - Hardware Abstraction Layer
+2023-12-02 18:42:07,354 INFO  [IocGenerator.logModulesVersionInfo]   Target STM32 FW    : 1.5.1
+
+2023-12-02 18:42:07,356 DEBUG [IocGenerator.process] C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\FOC-Motor-Control-G431-Hall-Sensor.ioc ioc file: Generating
+2023-12-02 18:42:07,357 DEBUG [IocGenerator.createOutput] Generating file from template templates\wb_ioc_template.ftl
+2023-12-02 18:42:09,373 DEBUG [IocGenerator.process] ioc file C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\FOC-Motor-Control-G431-Hall-Sensor.ioc Generated
+2023-12-02 18:42:09,379 INFO  [LineInfo_to_exitCode.log_LineInfo] C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\FOC-Motor-Control-G431-Hall-Sensor.ioc ioc: Generated
+2023-12-02 18:42:09,424 INFO  [Wb2MxProcess.lambda$create_extSettings_file_in$82c805cd$1] Generated C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\.extSettings
+2023-12-02 18:42:09,432 INFO  [Wb2MxProcess.lambda$run$$12] 
+Started STM32CubeMX for final c-code generation
+2023-12-02 18:42:09,446 DEBUG [CubeMxRunner.create_code_generation_script_for] Generated CubeMx script file: C:\Users\Owner\AppData\Local\Temp\WB_to_Mx-focmotorcontrolghallsensor-12008570992854765852.script
+2023-12-02 18:42:12,911 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:12,907 [INFO] MicroXplorer:98 - [MX] MX Start == 438854450845500
+2023-12-02 18:42:12,913 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:12,911 [INFO] MicroXplorer:653 - Detected Java Version = 11.0.17
+2023-12-02 18:42:12,923 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:12,923 [INFO] ApplicationProperties:184 - Using Application install path: C:\Program Files\STMicroelectronics\STM32Cube\STM32CubeMX_68X
+2023-12-02 18:42:12,956 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:12,955 [INFO] DbMcusXml:78 - Set database path to: C:\Program Files\STMicroelectronics\STM32Cube\STM32CubeMX_68X\\db\/mcu/
+2023-12-02 18:42:12,956 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:12,956 [INFO] ApiDb:274 - Set plugin database path to: C:\Program Files\STMicroelectronics\STM32Cube\STM32CubeMX_68X\\db\/plugins/boardmanager/
+2023-12-02 18:42:12,971 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:12,970 [INFO] McuFinderGlobals:53 - Set McuFinder mode to 1 (CubeMX integrated)
+2023-12-02 18:42:13,032 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:13,032 [INFO] ApiDb:250 - Set database path to: C:\Users\Owner\.stmcufinder\plugins\mcufinder//mcu/
+2023-12-02 18:42:13,034 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:13,034 [INFO] DbMcusAds:125 - Set database path to: C:\Users\Owner\.stmcufinder\plugins\mcufinder//mcu/
+2023-12-02 18:42:13,084 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:13,083 [INFO] CrossReferenceDbSqlite:203 - Set database path to: C:\Users\Owner\.stmcufinder\plugins\mcufinder//mcu/cs/
+2023-12-02 18:42:13,419 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:13,418 [INFO] RulesReader:64 - Compatibility file has been processed (293 Rules)
+2023-12-02 18:42:13,485 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:13,485 [INFO] STM32CubeMX:60 - Starting STM32CubeMX
+2023-12-02 18:42:15,418 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:15,417 [INFO] MainPanel:253 - HeapMemory: 536870912
+2023-12-02 18:42:15,708 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:15,708 [INFO] DbMcusXml:78 - Set database path to: C:\Program Files\STMicroelectronics\STM32Cube\STM32CubeMX_68X\\db\/mcu/
+2023-12-02 18:42:15,709 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:15,708 [INFO] ApiDb:274 - Set plugin database path to: C:\Program Files\STMicroelectronics\STM32Cube\STM32CubeMX_68X\\db\/plugins/boardmanager/
+2023-12-02 18:42:15,709 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:15,709 [INFO] ApiDb:261 - Set plugin images path to: C:\Program Files\STMicroelectronics\STM32Cube\STM32CubeMX_68X\\db\/plugins/mcufinder/images/
+2023-12-02 18:42:15,710 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:15,710 [INFO] ApiDb:250 - Set database path to: C:\Users\Owner\.stmcufinder\plugins\mcufinder//mcu/
+2023-12-02 18:42:15,711 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:15,711 [INFO] DbMcusAds:125 - Set database path to: C:\Users\Owner\.stmcufinder\plugins\mcufinder//mcu/
+2023-12-02 18:42:15,712 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:15,711 [INFO] CrossReferenceDbSqlite:203 - Set database path to: C:\Users\Owner\.stmcufinder\plugins\mcufinder//mcu/cs/
+2023-12-02 18:42:15,743 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:15,743 [INFO] ApplicationProperties:184 - Using Application install path: C:\Program Files\STMicroelectronics\STM32Cube\STM32CubeMX_68X
+2023-12-02 18:42:15,745 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:15,745 [INFO] PluginManage:196 - Search for loadable plugins [exclusion list=, ]
+2023-12-02 18:42:15,758 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:15,758 [INFO] PluginManage:310 - Check plugin analytics
+2023-12-02 18:42:16,404 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:16,403 [INFO] AnalyticsPlugin:253 - Accepted Software Licenses: STM32CubeMX.6.2.1,STM32CubeMX.6.8.0
+2023-12-02 18:42:16,405 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:16,405 [INFO] AnalyticsPlugin:255 - Accepted CMSIS Pack Licenses: 
+2023-12-02 18:42:16,408 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:16,407 [INFO] AnalyticsPlugin:257 - Accepted Firmware Licenses: FW.G4.1.5.0
+2023-12-02 18:42:16,415 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:16,414 [INFO] PluginManage:359 - Loaded plugin analytics (category:tool,tabindex:-1)
+2023-12-02 18:42:16,415 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:16,415 [INFO] PluginManage:310 - Check plugin cadmodel
+2023-12-02 18:42:16,697 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:16,696 [INFO] CADModel:105 - Init CAD model plugin
+2023-12-02 18:42:16,723 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:16,697 [INFO] PluginManage:359 - Loaded plugin cadmodel (category:power,tabindex:5)
+2023-12-02 18:42:16,723 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:16,697 [INFO] PluginManage:310 - Check plugin clock
+2023-12-02 18:42:16,798 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:16,797 [INFO] PluginManage:359 - Loaded plugin clock (category:base,tabindex:2)
+2023-12-02 18:42:16,820 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:16,819 [INFO] PluginManage:310 - Check plugin ddr
+2023-12-02 18:42:16,874 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:16,874 [INFO] PluginManage:359 - Loaded plugin ddr (category:tool,tabindex:6)
+2023-12-02 18:42:16,875 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:16,874 [INFO] PluginManage:310 - Check plugin filemanager
+2023-12-02 18:42:17,148 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:17,147 [INFO] PluginManage:359 - Loaded plugin filemanager (category:base,tabindex:10)
+2023-12-02 18:42:17,148 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:17,148 [INFO] PluginManage:310 - Check plugin ipmanager
+2023-12-02 18:42:17,202 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:17,202 [INFO] PluginManage:359 - Loaded plugin ipmanager (category:base,tabindex:5)
+2023-12-02 18:42:17,202 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:17,202 [INFO] PluginManage:310 - Check plugin lpbam
+2023-12-02 18:42:17,230 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:17,229 [INFO] PluginManage:359 - Loaded plugin lpbam (category:base,tabindex:0)
+2023-12-02 18:42:17,230 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:17,229 [INFO] PluginManage:310 - Check plugin pinoutandconfiguration
+2023-12-02 18:42:17,270 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:17,270 [INFO] PluginManage:359 - Loaded plugin pinoutandconfiguration (category:base,tabindex:1)
+2023-12-02 18:42:17,271 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:17,270 [INFO] PluginManage:310 - Check plugin pinoutconfig
+2023-12-02 18:42:17,726 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:17,725 [INFO] PluginManage:359 - Loaded plugin pinoutconfig (category:base,tabindex:0)
+2023-12-02 18:42:17,726 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:17,725 [INFO] PluginManage:310 - Check plugin power
+2023-12-02 18:42:17,813 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:17,813 [INFO] PluginManage:359 - Loaded plugin power (category:power,tabindex:4)
+2023-12-02 18:42:17,814 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:17,813 [INFO] PluginManage:310 - Check plugin projectmanager
+2023-12-02 18:42:17,982 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:17,981 [INFO] PluginManage:359 - Loaded plugin projectmanager (category:projectmanager,tabindex:3)
+2023-12-02 18:42:17,982 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:17,982 [INFO] PluginManage:310 - Check plugin thirdparty
+2023-12-02 18:42:18,374 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:18,374 [INFO] PluginManage:359 - Loaded plugin thirdparty (category:base,tabindex:-1)
+2023-12-02 18:42:18,375 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:18,375 [INFO] PluginManage:310 - Check plugin tools
+2023-12-02 18:42:18,375 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:18,375 [INFO] IntegrityCheckThread:86 - entering critical section [integrity check]
+2023-12-02 18:42:18,379 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:18,379 [INFO] ThirdPartyUpdaterWithRetryManager:70 - Updater plugin not ready yet. [1/15]
+2023-12-02 18:42:18,401 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:18,400 [INFO] PluginManage:359 - Loaded plugin tools (category:base,tabindex:7)
+2023-12-02 18:42:18,401 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:18,401 [INFO] PluginManage:310 - Check plugin tutovideos
+2023-12-02 18:42:18,683 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:18,683 [INFO] PluginManage:359 - Loaded plugin tutovideos (category:base,tabindex:-1)
+2023-12-02 18:42:18,684 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:18,683 [INFO] PluginManage:310 - Check plugin updater
+2023-12-02 18:42:18,726 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:18,726 [INFO] PluginManage:359 - Loaded plugin updater (category:base,tabindex:12)
+2023-12-02 18:42:18,727 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:18,727 [INFO] PluginManage:283 - PluginManage : Loaded plugins [15]
+2023-12-02 18:42:19,392 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:19,391 [INFO] PinOutPanel:1499 - setPackage(No Configuration,No Configuration)
+2023-12-02 18:42:19,508 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:19,508 [INFO] CADModel:165 - CPN selected for project level
+2023-12-02 18:42:19,509 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:19,508 [INFO] CADModel:114 - Register for checkConnection events
+2023-12-02 18:42:19,586 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:19,586 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:19,588 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:19,586 [INFO] PluginManager:220 - loadIPPluginJar : add adc
+2023-12-02 18:42:19,614 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:19,614 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:19,614 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:19,614 [INFO] PluginManager:220 - loadIPPluginJar : add aes
+2023-12-02 18:42:19,634 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:19,633 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:19,634 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:19,634 [INFO] PluginManager:220 - loadIPPluginJar : add can
+2023-12-02 18:42:19,651 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:19,650 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:19,651 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:19,650 [INFO] PluginManager:220 - loadIPPluginJar : add comp
+2023-12-02 18:42:19,675 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:19,675 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:19,676 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:19,675 [INFO] PluginManager:220 - loadIPPluginJar : add cryp
+2023-12-02 18:42:19,706 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:19,706 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:19,707 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:19,706 [INFO] PluginManager:220 - loadIPPluginJar : add dfsdm
+2023-12-02 18:42:19,734 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:19,734 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:19,734 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:19,734 [INFO] PluginManager:220 - loadIPPluginJar : add dma
+2023-12-02 18:42:19,746 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:19,746 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:19,747 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:19,746 [INFO] PluginManager:220 - loadIPPluginJar : add dma3
+2023-12-02 18:42:19,759 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:19,758 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:19,759 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:19,758 [INFO] PluginManager:220 - loadIPPluginJar : add fatfs
+2023-12-02 18:42:19,794 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:19,793 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:19,794 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:19,793 [INFO] PluginManager:220 - loadIPPluginJar : add fmc
+2023-12-02 18:42:19,835 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:19,835 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:19,835 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:19,835 [INFO] PluginManager:220 - loadIPPluginJar : add freertos
+2023-12-02 18:42:19,854 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:19,853 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:19,855 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:19,854 [INFO] PluginManager:220 - loadIPPluginJar : add genericplugin
+2023-12-02 18:42:19,877 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:19,877 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:19,877 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:19,877 [INFO] PluginManager:220 - loadIPPluginJar : add gfxmmu
+2023-12-02 18:42:19,911 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:19,911 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:19,911 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:19,911 [INFO] PluginManager:220 - loadIPPluginJar : add gic
+2023-12-02 18:42:19,935 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:19,935 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:19,936 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:19,935 [INFO] PluginManager:220 - loadIPPluginJar : add gpio
+2023-12-02 18:42:19,952 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:19,952 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:19,953 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:19,952 [INFO] PluginManager:220 - loadIPPluginJar : add gtzc
+2023-12-02 18:42:19,974 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:19,974 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:19,975 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:19,974 [INFO] PluginManager:220 - loadIPPluginJar : add hash
+2023-12-02 18:42:19,986 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:19,986 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:19,987 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:19,986 [INFO] PluginManager:220 - loadIPPluginJar : add i2c
+2023-12-02 18:42:20,007 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:20,006 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:20,007 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:20,007 [INFO] PluginManager:220 - loadIPPluginJar : add i2s
+2023-12-02 18:42:20,019 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:20,019 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:20,020 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:20,019 [INFO] PluginManager:220 - loadIPPluginJar : add i3c
+2023-12-02 18:42:20,043 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:20,042 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:20,043 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:20,042 [INFO] PluginManager:220 - loadIPPluginJar : add ipddr
+2023-12-02 18:42:20,065 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:20,065 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:20,065 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:20,065 [INFO] PluginManager:220 - loadIPPluginJar : add linkedlist
+2023-12-02 18:42:20,089 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:20,088 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:20,089 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:20,089 [INFO] PluginManager:220 - loadIPPluginJar : add lorawan
+2023-12-02 18:42:20,112 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:20,111 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:20,112 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:20,112 [INFO] PluginManager:220 - loadIPPluginJar : add ltdc
+2023-12-02 18:42:20,129 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:20,128 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:20,129 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:20,128 [INFO] PluginManager:220 - loadIPPluginJar : add mdma
+2023-12-02 18:42:20,148 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:20,148 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:20,148 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:20,148 [INFO] PluginManager:220 - loadIPPluginJar : add nvic
+2023-12-02 18:42:20,170 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:20,169 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:20,170 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:20,169 [INFO] PluginManager:220 - loadIPPluginJar : add opamp
+2023-12-02 18:42:20,190 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:20,190 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:20,191 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:20,190 [INFO] PluginManager:220 - loadIPPluginJar : add openamp
+2023-12-02 18:42:20,218 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:20,218 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:20,219 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:20,218 [INFO] PluginManager:220 - loadIPPluginJar : add pdm2pcm
+2023-12-02 18:42:20,249 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:20,249 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:20,252 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:20,251 [INFO] PluginManager:220 - loadIPPluginJar : add plateformsettings
+2023-12-02 18:42:20,262 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:20,261 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:20,262 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:20,262 [INFO] PluginManager:220 - loadIPPluginJar : add quadspi
+2023-12-02 18:42:20,292 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:20,291 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:20,292 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:20,291 [INFO] PluginManager:220 - loadIPPluginJar : add resmgrutility
+2023-12-02 18:42:20,316 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:20,315 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:20,316 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:20,316 [INFO] PluginManager:220 - loadIPPluginJar : add sai
+2023-12-02 18:42:20,335 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:20,335 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:20,336 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:20,335 [INFO] PluginManager:220 - loadIPPluginJar : add spi
+2023-12-02 18:42:20,354 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:20,354 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:20,355 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:20,354 [INFO] PluginManager:220 - loadIPPluginJar : add stm32_wpan
+2023-12-02 18:42:20,368 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:20,367 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:20,368 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:20,367 [INFO] PluginManager:220 - loadIPPluginJar : add tim
+2023-12-02 18:42:20,389 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:20,389 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:20,389 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:20,389 [INFO] PluginManager:220 - loadIPPluginJar : add touchsensing
+2023-12-02 18:42:20,402 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:20,401 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:20,402 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:20,401 [INFO] PluginManager:220 - loadIPPluginJar : add tracer_emb
+2023-12-02 18:42:20,422 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:20,422 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:20,422 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:20,422 [INFO] PluginManager:220 - loadIPPluginJar : add ts
+2023-12-02 18:42:20,435 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:20,435 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:20,436 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:20,435 [INFO] PluginManager:220 - loadIPPluginJar : add tsc
+2023-12-02 18:42:20,452 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:20,452 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:20,453 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:20,452 [INFO] PluginManager:220 - loadIPPluginJar : add ucpd
+2023-12-02 18:42:20,467 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:20,467 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:20,468 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:20,467 [INFO] PluginManager:220 - loadIPPluginJar : add usart
+2023-12-02 18:42:20,476 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:20,475 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:20,476 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:20,475 [INFO] PluginManager:220 - loadIPPluginJar : add usbx
+2023-12-02 18:42:20,534 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:20,533 [INFO] Updater:1056 - Updater Version found : 6.8.0
+2023-12-02 18:42:20,576 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:20,576 [INFO] ApplicationProperties:184 - Using Application install path: C:\Program Files\STMicroelectronics\STM32Cube\STM32CubeMX_68X
+2023-12-02 18:42:21,379 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:21,379 [INFO] ThirdPartyUpdaterWithRetryManager:70 - Updater plugin not ready yet. [2/15]
+2023-12-02 18:42:22,715 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:22,714 [INFO] MainUpdater:2854 - connection check result : 10
+2023-12-02 18:42:22,716 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:22,715 [INFO] MainUpdater:283 - Updater Check For Update Now.
+2023-12-02 18:42:22,716 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:22,716 [INFO] MicroXplorer:498 - Change Database Version : DB.6.0.80
+2023-12-02 18:42:22,994 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:22,993 [INFO] CADModel:165 - CPN selected for project level
+2023-12-02 18:42:22,994 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:22,993 [INFO] CADModel:114 - Register for checkConnection events
+2023-12-02 18:42:23,172 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:23,172 [INFO] CheckServerUpdateThread:120 - End of CheckServer Thread
+2023-12-02 18:42:23,408 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:23,408 [INFO] CADModel:165 - CPN selected for project level
+2023-12-02 18:42:23,409 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:23,408 [INFO] CADModel:114 - Register for checkConnection events
+2023-12-02 18:42:23,495 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:23,495 [INFO] HomeAdPanel:127 - No auto-refresh data => no check proxy status
+2023-12-02 18:42:23,587 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:23,587 [INFO] DbMcusAds:53 - JSON generation date=Tue Mar 07 03:50:55 EST 2023 (1678179055114)
+2023-12-02 18:42:23,629 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:23,629 [INFO] DetailPanel:341 - Set advertising image to C:/Users/Owner/STM32Cube/Repository/\en.prom-stm32h5-mcu-finder.jpg
+2023-12-02 18:42:23,758 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:23,757 [INFO] DetailPanel:341 - Set advertising image to C:/Users/Owner/STM32Cube/Repository/\en.prom-stm32h5-mcu-finder.jpg
+2023-12-02 18:42:23,891 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:23,890 [INFO] MainFrame:183 - [MX] HOME_PANEL == 438865459712700
+2023-12-02 18:42:23,964 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:23,963 [INFO] MicroXplorer:468 - Change Database Path : 
+2023-12-02 18:42:23,964 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:23,964 [INFO] MicroXplorer:498 - Change Database Version : DB.6.0.80
+2023-12-02 18:42:28,268 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:28,268 [INFO] ThirdParty:978 - Integrity check success = true
+2023-12-02 18:42:28,268 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:28,268 [INFO] IntegrityCheckThread:100 - exiting critical section [integrity check]
+2023-12-02 18:42:28,268 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:28,268 [INFO] IntegrityCheckThread:103 - End integrity checks thread
+2023-12-02 18:42:28,269 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:28,268 [INFO] ThirdParty:873 - entering critical section [close project]
+2023-12-02 18:42:28,269 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:28,269 [INFO] ThirdParty:883 - exiting critical section [close project]
+2023-12-02 18:42:28,271 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:28,271 [INFO] PinOutPanel:1499 - setPackage(No Configuration,No Configuration)
+2023-12-02 18:42:28,312 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:28,311 [INFO] UtilMem:75 - Begin LoadConfig() Used Memory: 327974968 Bytes (536870912)
+2023-12-02 18:42:28,316 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:28,315 [INFO] MicroXplorer:468 - Change Database Path : 
+2023-12-02 18:42:28,317 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:28,316 [INFO] MicroXplorer:498 - Change Database Version : DB.6.0.80
+2023-12-02 18:42:28,318 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:28,318 [INFO] OpenFileManager:308 - Change cursor
+2023-12-02 18:42:28,586 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:28,585 [INFO] Mcu:1937 - Initializing MCU STM32G431R(6-8-B)Tx STM32G431RBTx 
+2023-12-02 18:42:28,721 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:28,720 [INFO] ApiDb:581 - Connected to CubeFinder SQLite database (C:\Users\Owner\.stmcufinder\plugins\mcufinder\mcu\cube-finder-db.db)
+2023-12-02 18:42:28,948 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:28,948 [INFO] ApiDb:668 - CubeFinder database Data Model version=2.1
+2023-12-02 18:42:28,949 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:28,948 [INFO] ApiDb:669 - CubeFinder database Configuration version=3.0.37
+2023-12-02 18:42:28,949 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:28,949 [INFO] ApiDb:670 - CubeFinder database generation date=2023-10-13 (1697197505)
+2023-12-02 18:42:28,950 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:28,949 [INFO] ApiDb:671 - CubeFinder database FW Pack versions=[FP-ATR-ASTRA1_V2.0.0, FP-SNS-FLIGHT1_V5.0.1, FP-SNS-FLIGHT1_V5.0.2, FP-SNS-MOTENV1_V4.3.1, FP-SNS-MOTENV1_V4.3.2, FP-SNS-SMARTAG2_V1.2.0, I-CUBE-ITTIADB_V8.6.3-1, STM32Cube_FW_C0_V1.1.0, STM32Cube_FW_F4_V1.27.1, STM32Cube_FW_F7_V1.17.0, STM32Cube_FW_G0_V1.6.1, STM32Cube_FW_G4_V1.5.1, STM32Cube_FW_H5_V0.5.1, STM32Cube_FW_H5_V1.1.1, STM32Cube_FW_H7_V1.11.0, STM32Cube_FW_L0_V1.12.2, STM32Cube_FW_L5_V1.5.0, STM32Cube_FW_U5_V1.3.0, STM32Cube_FW_U5_V1.3.0RC4, STM32Cube_FW_WBA_V1.0.0RC1, STM32Cube_FW_WBA_V1.1.0RC1, STM32Cube_FW_WBA_V1.1.1, STM32Cube_FW_WB_V1.15.0RC1, STM32Cube_FW_WB_V1.16.0, STM32Cube_FW_WB_V1.16.0RC2, STM32Cube_FW_WB_V1.17.3, STM32Cube_FW_WL_V1.3.0, X-CUBE-ALGOBUILD_V1.3.0, X-CUBE-ALS_V1.0.1, X-CUBE-AZRTOS-F4_V1.1.0, X-CUBE-AZRTOS-F7_V1.1.0, X-CUBE-AZRTOS-G0_V1.1.0, X-CUBE-AZRTOS-G4_V2.0.0, X-CUBE-AZRTOS-H7_V3.1.0, X-CUBE-AZRTOS-L4_V1.0.0, X-CUBE-AZRTOS-L4_V2.0.0, X-CUBE-AZRTOS-L5_V1.1.0, X-CUBE-AZRTOS-WB_V2.0.0, X-CUBE-AZRTOS-WL_V2.0.0, X-CUBE-BLE1_V7.0.0, X-CUBE-BLE2_V3.3.0, X-CUBE-BLEMGR_V2.0.0, X-CUBE-EEPRMA1_V4.1.0, X-CUBE-FREERTOS_V1.1.0, X-CUBE-GNSS1_V6.0.0, X-CUBE-MEMS1_V10.0.0, X-CUBE-MEMS1_V9.1.0, X-CUBE-MEMS1_V9.4.0, X-CUBE-MEMS1_V9.6.0, X-CUBE-NFC4_V3.0.0, X-CUBE-NFC7_V1.0.1, X-CUBE-SFXS2LP1_V4.0.0, X-CUBE-SUBG2_V5.0.0, X-CUBE-TOF1_V3.3.1]
+2023-12-02 18:42:32,684 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:32,684 [INFO] ApiDb:240 - Found 297 in-development CPN: [B-G473E-ZEST1S, B-WB1M-WPAN1, B-WL5M-SUBG1, NUCLEO-C031C6, NUCLEO-H503RB, NUCLEO-H563ZI, NUCLEO-U545RE-Q, NUCLEO-U5A5ZJ-Q, NUCLEO-WBA52CG, STEVAL-PROTEUS1, STEVAL-STWINBX1, STM320518-EVAL, STM32C0116-DK, STM32C011D6Y3TR, STM32C011D6Y6TR, STM32C011F4P3, STM32C011F4P6, STM32C011F4U3, STM32C011F4U6TR, STM32C011F6P3, STM32C011F6P6, STM32C011F6U3, STM32C011F6U6TR, STM32C011J4M3, STM32C011J4M6, STM32C011J6M3, STM32C011J6M6, STM32C0316-DK, STM32C031C4T3, STM32C031C4T6, STM32C031C4U3, STM32C031C4U6, STM32C031C6T3, STM32C031C6T6, STM32C031C6U3, STM32C031C6U6, STM32C031F4P3, STM32C031F4P6, STM32C031F6P3, STM32C031F6P6, STM32C031G4U3, STM32C031G4U6, STM32C031G6U3, STM32C031G6U6, STM32C031K4T3, STM32C031K4T6, STM32C031K4U3, STM32C031K4U6, STM32C031K6T3, STM32C031K6T6, STM32C031K6U3, STM32C031K6U6, STM32G071K8TXN, STM32G071K8UXN, STM32G081GBU6N, STM32G081KBT6N, STM32G081KBUXN, STM32G0B1CCT6N, STM32G0B1KCT6, STM32G0B1NEY6TR, STM32G0B1RCT6N, STM32G0C1CCT6, STM32G0C1CCT6N, STM32G0C1CCU6N, STM32G0C1CET6N, STM32G0C1CEU6N, STM32G0C1KCT6, STM32G0C1NEY6TR, STM32G0C1RCI6N, STM32G0C1RCT6N, STM32G0C1REI6N, STM32G0C1RET6N, STM32G0C1VCI6, STM32G0C1VEI6, STM32G471CCT6, STM32G471CCU6, STM32G471CET3, STM32G471CET6, STM32G471CEU3, STM32G471CEU6, STM32G471MCT6, STM32G471MET3, STM32G471MET6, STM32G471MEY6TR, STM32G471QCT6, STM32G471QET3, STM32G471RCT6, STM32G471RET3, STM32G471RET6, STM32G471VCH6, STM32G471VCI6, STM32G471VCT6, STM32G471VEH3, STM32G471VEH6, STM32G471VEI3, STM32G471VEI6, STM32G471VET3, STM32G471VET6, STM32G474CCT6, STM32H503CBT6, STM32H503CBU6, STM32H503EBY6TR, STM32H503KBU6, STM32H503RBT6, STM32H562AGI6, STM32H562AII6, STM32H562IGK6, STM32H562IGT6, STM32H562IIK6, STM32H562IIT6, STM32H562RGT6, STM32H562RGV6, STM32H562RIT6, STM32H562RIV6, STM32H562VGT6, STM32H562VIT6, STM32H562ZGT6, STM32H562ZIT6, STM32H563AGI6, STM32H563AII3Q, STM32H563AII6, STM32H563IGK6, STM32H563IGT6, STM32H563IIK3Q, STM32H563IIK6, STM32H563IIT3Q, STM32H563IIT6, STM32H563MIY3QTR, STM32H563RGT6, STM32H563RGV6, STM32H563RIT6, STM32H563RIV6, STM32H563VGT6, STM32H563VIT3Q, STM32H563VIT6, STM32H563ZGT6, STM32H563ZIT3Q, STM32H563ZIT6, STM32H573AII3Q, STM32H573AII6, STM32H573I-DK, STM32H573IIK3Q, STM32H573IIK6, STM32H573IIT3Q, STM32H573IIT6, STM32H573MIY3QTR, STM32H573RIT6, STM32H573RIV6, STM32H573VIT3Q, STM32H573VIT6, STM32H573ZIT3Q, STM32H573ZIT6, STM32L4R5QGI6STR, STM32MP131AAE3, STM32MP131AAF3, STM32MP131AAG3, STM32MP131CAE3, STM32MP131CAF3, STM32MP131CAG3, STM32MP131DAE7, STM32MP131DAF7, STM32MP131DAG7, STM32MP131FAE7, STM32MP131FAF7, STM32MP131FAG7, STM32MP133AAE3, STM32MP133AAF3, STM32MP133AAG3, STM32MP133CAE3, STM32MP133CAF3, STM32MP133CAG3, STM32MP133DAE7, STM32MP133DAF7, STM32MP133DAG7, STM32MP133FAE7, STM32MP133FAF7, STM32MP133FAG7, STM32MP135AAE3, STM32MP135AAF3, STM32MP135AAG3, STM32MP135CAE3, STM32MP135CAF3, STM32MP135CAG3, STM32MP135DAE7, STM32MP135DAF7, STM32MP135DAG7, STM32MP135F-DK, STM32MP135FAE7, STM32MP135FAF7, STM32MP135FAF7T, STM32MP135FAF7U, STM32MP135FAG7, STM32U535CBT6, STM32U535CBT6Q, STM32U535CBU6, STM32U535CBU6Q, STM32U535CCT6, STM32U535CCT6Q, STM32U535CCU6, STM32U535CCU6Q, STM32U535CET6, STM32U535CET6Q, STM32U535CEU6, STM32U535CEU6Q, STM32U535JEY6QTR, STM32U535NCY6QTR, STM32U535NEY6QTR, STM32U535RBI6, STM32U535RBI6Q, STM32U535RBT6, STM32U535RBT6Q, STM32U535RCI6, STM32U535RCI6Q, STM32U535RCT6, STM32U535RCT6Q, STM32U535REI6, STM32U535REI6Q, STM32U535RET6, STM32U535RET6Q, STM32U535VCI6, STM32U535VCI6Q, STM32U535VCT6, STM32U535VCT6Q, STM32U535VEI6, STM32U535VEI6Q, STM32U535VET6, STM32U535VET6Q, STM32U545CET6, STM32U545CET6Q, STM32U545CEU6, STM32U545CEU6Q, STM32U545JEY6QTR, STM32U545NEY6QTR, STM32U545REI6, STM32U545REI6Q, STM32U545RET6, STM32U545RET6Q, STM32U545VEI6, STM32U545VEI6Q, STM32U545VET6, STM32U545VET6Q, STM32U595AIH6, STM32U595AIH6Q, STM32U595AJH6, STM32U595AJH6Q, STM32U595QII6, STM32U595QII6Q, STM32U595QJI6, STM32U595QJI6Q, STM32U595RIT6, STM32U595RIT6Q, STM32U595RJT6, STM32U595RJT6Q, STM32U595VIT6, STM32U595VIT6Q, STM32U595VJT6, STM32U595VJT6Q, STM32U595ZIT6, STM32U595ZIT6Q, STM32U595ZIY6QTR, STM32U595ZJT6, STM32U595ZJT6Q, STM32U595ZJY6QTR, STM32U599BJY6QTR, STM32U599NIH6Q, STM32U599NJH6Q, STM32U599VIT6Q, STM32U599VJT6, STM32U599VJT6Q, STM32U599ZIT6Q, STM32U599ZIY6QTR, STM32U599ZJT6Q, STM32U599ZJY6QTR, STM32U5A5AJH6, STM32U5A5AJH6Q, STM32U5A5QJI6, STM32U5A5QJI6Q, STM32U5A5RJT6, STM32U5A5RJT6Q, STM32U5A5VJT6, STM32U5A5VJT6Q, STM32U5A5ZJT6, STM32U5A5ZJT6Q, STM32U5A5ZJY6QTR, STM32U5A9BJY6QTR, STM32U5A9J-DK, STM32U5A9NJH6Q, STM32U5A9VJT6Q, STM32U5A9ZJT6Q, STM32U5A9ZJY6QTR, STM32WB1MMCH6, STM32WBA52CEU6, STM32WBA52CEU6T, STM32WBA52CGU6, STM32WBA52CGU6T, STM32WL5MOCH6, STM32WL5MOCH6TR]
+2023-12-02 18:42:32,689 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:32,689 [INFO] DbMcus:216 - Found 3825 MCUs, 3825 are supported
+2023-12-02 18:42:32,692 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:32,692 [INFO] ApiDb:423 - Load user favorites file C:\Users\Owner/.stm32cubemx/favorites.mcus.txt: 0 item(s)
+2023-12-02 18:42:32,692 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:32,692 [INFO] ApiDb:427 - User favorites MCUs=[]
+2023-12-02 18:42:32,692 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:32,692 [INFO] DbMcus:222 - Set 0 / 0 favorites MCUs
+2023-12-02 18:42:32,969 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:32,969 [INFO] Mcu:1950 - No CPN specified => set CPN to STM32G431RBT3
+2023-12-02 18:42:36,836 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:36,835 [INFO] Context:659 - Trying to add GPIOservice into a context  which must be forbidden
+2023-12-02 18:42:38,230 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:38,229 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) Unable to find key (Mcu.ThirdPartyNb) in loaded IOC file
+2023-12-02 18:42:38,609 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:38,608 [INFO] RtosManager:555 - Registered RTOS mode: class=CMSIS, group=RTOS, mode=CMSIS_V1, owner=FREERTOS
+2023-12-02 18:42:38,609 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:38,609 [INFO] RtosManager:555 - Registered RTOS mode: class=CMSIS, group=RTOS2, mode=CMSIS_V2, owner=FREERTOS
+2023-12-02 18:42:38,609 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:38,609 [INFO] RtosManager:555 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V1, owner=FREERTOS
+2023-12-02 18:42:38,610 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:38,609 [INFO] RtosManager:555 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V2, owner=FREERTOS
+2023-12-02 18:42:39,090 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:39,090 [INFO] ThirdPartyModel:298 - Start build external matchings
+2023-12-02 18:42:42,124 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,123 [INFO] ThirdPartyModel:316 - End build external matchings
+2023-12-02 18:42:42,284 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,284 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Instance) has Id (USART2_RX) currently not set
+2023-12-02 18:42:42,285 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,284 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Request) has Id (USART2_RX) currently not set
+2023-12-02 18:42:42,285 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,285 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Direction) has Id (USART2_RX) currently not set
+2023-12-02 18:42:42,285 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,285 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphInc) has Id (USART2_RX) currently not set
+2023-12-02 18:42:42,286 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,285 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemInc) has Id (USART2_RX) currently not set
+2023-12-02 18:42:42,286 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,286 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphDataAlignment) has Id (USART2_RX) currently not set
+2023-12-02 18:42:42,287 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,287 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemDataAlignment) has Id (USART2_RX) currently not set
+2023-12-02 18:42:42,288 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,287 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Mode) has Id (USART2_RX) currently not set
+2023-12-02 18:42:42,288 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,288 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Priority) has Id (USART2_RX) currently not set
+2023-12-02 18:42:42,288 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,288 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Instance) has Id (USART2_TX) currently not set
+2023-12-02 18:42:42,288 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,288 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Request) has Id (USART2_TX) currently not set
+2023-12-02 18:42:42,289 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,288 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Direction) has Id (USART2_TX) currently not set
+2023-12-02 18:42:42,289 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,288 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphInc) has Id (USART2_TX) currently not set
+2023-12-02 18:42:42,289 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,288 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemInc) has Id (USART2_TX) currently not set
+2023-12-02 18:42:42,289 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,289 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphDataAlignment) has Id (USART2_TX) currently not set
+2023-12-02 18:42:42,289 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,289 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemDataAlignment) has Id (USART2_TX) currently not set
+2023-12-02 18:42:42,290 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,289 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Mode) has Id (USART2_TX) currently not set
+2023-12-02 18:42:42,290 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,289 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Priority) has Id (USART2_TX) currently not set
+2023-12-02 18:42:42,390 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,389 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (ADC_AHBPERIPH)
+2023-12-02 18:42:42,390 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,390 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (BKIN1_FILTER)
+2023-12-02 18:42:42,390 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,390 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (BKIN2_FILTER)
+2023-12-02 18:42:42,391 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,390 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (CCMRAM_ENABLED)
+2023-12-02 18:42:42,391 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,391 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (CLOCK_FREQUENCY)
+2023-12-02 18:42:42,391 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,391 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (CLOCK_SOURCE)
+2023-12-02 18:42:42,392 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,391 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (CPU_CLK_170_MHZ)
+2023-12-02 18:42:42,392 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,392 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (DC_CURRENT_RS_MEAS)
+2023-12-02 18:42:42,394 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,393 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (DRIVES_NUMBER_SELECTION)
+2023-12-02 18:42:42,394 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,394 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (EMERGENCY_STOP_GPIO_PIN)
+2023-12-02 18:42:42,395 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,395 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (EMERGENCY_STOP_GPIO_PORT)
+2023-12-02 18:42:42,395 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,395 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (EMERGENCY2_STOP_GPIO_PIN)
+2023-12-02 18:42:42,396 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,396 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (EMERGENCY2_STOP_GPIO_PORT)
+2023-12-02 18:42:42,396 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,396 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (ENCODER_AVAILABLE)
+2023-12-02 18:42:42,396 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,396 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (EXT_CLK_24_MHZ)
+2023-12-02 18:42:42,397 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,396 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (EXT_CLOCK_FREQUENCY)
+2023-12-02 18:42:42,397 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,396 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (FEEDBACK_NET_FILTERING)
+2023-12-02 18:42:42,397 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,397 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (H1_GPIO_PIN)
+2023-12-02 18:42:42,397 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,397 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (H1_GPIO_PORT)
+2023-12-02 18:42:42,397 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,397 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (H2_GPIO_PIN)
+2023-12-02 18:42:42,398 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,398 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (H2_GPIO_PORT)
+2023-12-02 18:42:42,398 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,398 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (H3_GPIO_PIN)
+2023-12-02 18:42:42,399 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,398 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (H3_GPIO_PORT)
+2023-12-02 18:42:42,399 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,399 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (HALL_SENSORS_AVAILABLE)
+2023-12-02 18:42:42,399 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,399 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (HW_COMPLEMENTED_LOW_SIDE)
+2023-12-02 18:42:42,400 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,399 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (HWV_CS)
+2023-12-02 18:42:42,400 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,400 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (HWV_OCP)
+2023-12-02 18:42:42,400 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,400 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (HWV_PWM)
+2023-12-02 18:42:42,400 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,400 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (IPs)
+2023-12-02 18:42:42,401 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,401 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (M1_CURRENT_AMPLIFICATION_TOPO)
+2023-12-02 18:42:42,401 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,401 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (M1_CURRENT_PROTECTION_DESTINATION)
+2023-12-02 18:42:42,401 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,401 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Parameter (M1_PWM_CHARGE_BOOT_CAP_DUTY_CYCLES) has invalid value (0.000)
+2023-12-02 18:42:42,402 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,402 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (M1_PWM_DRIVER_PN)
+2023-12-02 18:42:42,402 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,402 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (MAX_MODULATION_100_PER_CENT)
+2023-12-02 18:42:42,402 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,402 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (MAX_READABLE_CURRENT)
+2023-12-02 18:42:42,402 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,402 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (MC_WORKBENCH_VERSION)
+2023-12-02 18:42:42,403 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,403 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (MCU)
+2023-12-02 18:42:42,403 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,403 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (MCU_FAMILY)
+2023-12-02 18:42:42,404 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,403 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (MCU_LINE)
+2023-12-02 18:42:42,404 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,403 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (MCU_NAME)
+2023-12-02 18:42:42,404 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,403 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (MCU_PACKAGE)
+2023-12-02 18:42:42,404 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,404 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (MCU_TYPE)
+2023-12-02 18:42:42,405 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,404 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (MCU_USERNAME)
+2023-12-02 18:42:42,405 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,404 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (MOTOR_TYPE)
+2023-12-02 18:42:42,405 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,405 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (OVERCURR_FEEDBACK_POLARITY)
+2023-12-02 18:42:42,405 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,405 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (PHASE_U_CURR_ADC)
+2023-12-02 18:42:42,406 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,405 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (PHASE_U_GPIO_PIN)
+2023-12-02 18:42:42,406 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,405 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (PHASE_U_GPIO_PORT)
+2023-12-02 18:42:42,406 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,405 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (PHASE_UH_GPIO_PIN)
+2023-12-02 18:42:42,406 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,405 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (PHASE_UH_GPIO_PORT)
+2023-12-02 18:42:42,406 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,406 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (PHASE_UH_POLARITY)
+2023-12-02 18:42:42,407 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,406 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (PHASE_UL_GPIO_PIN)
+2023-12-02 18:42:42,407 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,406 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (PHASE_UL_GPIO_PORT)
+2023-12-02 18:42:42,407 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,406 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (PHASE_UL_POLARITY)
+2023-12-02 18:42:42,407 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,406 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (PHASE_V_CURR_ADC)
+2023-12-02 18:42:42,407 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,406 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (PHASE_V_GPIO_PIN)
+2023-12-02 18:42:42,407 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,406 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (PHASE_V_GPIO_PORT)
+2023-12-02 18:42:42,407 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,407 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (PHASE_V_S_CURR_ADC)
+2023-12-02 18:42:42,407 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,407 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (PHASE_V_S_CURR_CHANNEL)
+2023-12-02 18:42:42,408 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,407 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (PHASE_V_S_GPIO_PIN)
+2023-12-02 18:42:42,408 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,407 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (PHASE_V_S_GPIO_PORT)
+2023-12-02 18:42:42,408 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,407 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (PHASE_VH_GPIO_PIN)
+2023-12-02 18:42:42,408 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,407 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (PHASE_VH_GPIO_PORT)
+2023-12-02 18:42:42,408 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,407 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (PHASE_VH_POLARITY)
+2023-12-02 18:42:42,409 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,407 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (PHASE_VL_GPIO_PIN)
+2023-12-02 18:42:42,409 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,407 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (PHASE_VL_GPIO_PORT)
+2023-12-02 18:42:42,409 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,408 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (PHASE_VL_POLARITY)
+2023-12-02 18:42:42,409 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,408 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (PHASE_W_CURR_ADC)
+2023-12-02 18:42:42,410 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,408 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (PHASE_W_GPIO_PIN)
+2023-12-02 18:42:42,410 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,408 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (PHASE_W_GPIO_PORT)
+2023-12-02 18:42:42,410 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,408 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (PHASE_WH_GPIO_PIN)
+2023-12-02 18:42:42,410 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,408 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (PHASE_WH_GPIO_PORT)
+2023-12-02 18:42:42,411 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,408 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (PHASE_WH_POLARITY)
+2023-12-02 18:42:42,412 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,410 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (PHASE_WL_GPIO_PIN)
+2023-12-02 18:42:42,412 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,411 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (PHASE_WL_GPIO_PORT)
+2023-12-02 18:42:42,412 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,412 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (PHASE_WL_POLARITY)
+2023-12-02 18:42:42,412 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,412 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (POTENTIOMETER_READING)
+2023-12-02 18:42:42,413 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,413 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (R_BRAKE_SWITCH_OFF_THRES_V)
+2023-12-02 18:42:42,413 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,413 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (SPD_DIFFERENTIAL_TERM_ENABLING)
+2023-12-02 18:42:42,413 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,413 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (START_STOP_POLARITY)
+2023-12-02 18:42:42,414 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,413 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (START_STOP_POLARITY_EDGE)
+2023-12-02 18:42:42,414 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,413 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (STM32G431RB)
+2023-12-02 18:42:42,414 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,414 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (TFDIFFERENTIAL_TERM_ENABLING)
+2023-12-02 18:42:42,414 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,414 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (USART_RX_GPIO_PIN)
+2023-12-02 18:42:42,414 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,414 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (USART_RX_GPIO_PORT)
+2023-12-02 18:42:42,415 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,414 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (USART_SELECTION)
+2023-12-02 18:42:42,415 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,414 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (USART_SPEED)
+2023-12-02 18:42:42,415 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,414 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (USART_TX_GPIO_PIN)
+2023-12-02 18:42:42,415 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,414 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (USART_TX_GPIO_PORT)
+2023-12-02 18:42:42,415 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,414 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (USE_3OPAMPS)
+2023-12-02 18:42:42,416 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,415 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (VBUS_GPIO_PIN)
+2023-12-02 18:42:42,416 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,415 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (VBUS_GPIO_PORT)
+2023-12-02 18:42:42,416 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,415 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (WB_to_Mx_template_version)
+2023-12-02 18:42:42,416 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,415 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (WB_to_Mx_version)
+2023-12-02 18:42:42,416 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,415 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (WB_UI_ENCODER_HAS_INDEX_PIN)
+2023-12-02 18:42:42,417 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,415 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (WB_UI_FRICTION)
+2023-12-02 18:42:42,417 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,416 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (WB_UI_INERTIA)
+2023-12-02 18:42:42,417 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,416 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (WB_UI_MAGNETIC_STRUCTURE)
+2023-12-02 18:42:42,417 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,416 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (WB_UI_MAX_CURRENT)
+2023-12-02 18:42:42,417 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,416 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (MotorControl) : Invalid parameter (WB_UI_MAX_NOMINAL_DC_VOLTAGE)
+2023-12-02 18:42:42,418 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,416 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (ADC345Freq_Value)
+2023-12-02 18:42:42,418 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,417 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2023-12-02 18:42:42,418 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,417 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (HRTIM1Freq_Value)
+2023-12-02 18:42:42,418 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,417 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (I2C4Freq_Value)
+2023-12-02 18:42:42,419 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,419 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (QSPIFreq_Value)
+2023-12-02 18:42:42,419 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,419 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Parameter (RNGFreq_Value) has invalid value (170000000)
+2023-12-02 18:42:42,420 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,419 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (UART5Freq_Value)
+2023-12-02 18:42:42,420 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,419 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Parameter (USBFreq_Value) has invalid value (170000000)
+2023-12-02 18:42:42,434 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:42,434 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (TIM1) : Parameter (SourceBRK2DigInputPolarity) has invalid value (TIM_BREAKINPUTSOURCE_POLARITY_LOW)
+2023-12-02 18:42:43,083 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,083 [INFO] UtilMem:75 - End LoadConfig() Used Memory: 375852192 Bytes (966787072)
+2023-12-02 18:42:43,619 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,619 [INFO] ThirdParty:835 - entering critical section [change project]
+2023-12-02 18:42:43,619 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,619 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 6.0.0
+2023-12-02 18:42:43,619 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,619 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 2.0.0
+2023-12-02 18:42:43,620 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,619 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-F4 1.1.0
+2023-12-02 18:42:43,620 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,619 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics LIBJPEG 8.0.0
+2023-12-02 18:42:43,620 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,619 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :wolfSSL I-CUBE-wolfSSL 5.6.4
+2023-12-02 18:42:43,620 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,619 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SMBUS 2.1.0
+2023-12-02 18:42:43,620 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,619 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 4.1.0
+2023-12-02 18:42:43,620 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,619 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLEMGR 1.2.0
+2023-12-02 18:42:43,620 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,619 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-H7 1.1.0
+2023-12-02 18:42:43,621 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,619 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-F7 1.1.0
+2023-12-02 18:42:43,621 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,620 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L5 2.0.0
+2023-12-02 18:42:43,621 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,620 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 2.0.0
+2023-12-02 18:42:43,621 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,620 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 9.6.0
+2023-12-02 18:42:43,621 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,620 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-EEPRMA1 4.2.0
+2023-12-02 18:42:43,622 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,620 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :ITTIA_DB I-CUBE-ITTIADB 8.8.0
+2023-12-02 18:42:43,622 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,620 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-MOTENV1 4.3.2
+2023-12-02 18:42:43,622 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,620 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 6.2.3
+2023-12-02 18:42:43,622 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,620 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-EEPRMA1 3.0.0
+2023-12-02 18:42:43,622 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,620 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 6.2.4
+2023-12-02 18:42:43,622 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,620 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2023-12-02 18:42:43,622 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,620 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLEMGR 2.0.0
+2023-12-02 18:42:43,622 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,620 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 6.2.0
+2023-12-02 18:42:43,623 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,620 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 6.2.1
+2023-12-02 18:42:43,623 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,620 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE2 3.2.1
+2023-12-02 18:42:43,623 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,620 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-FLIGHT1 5.0.2
+2023-12-02 18:42:43,623 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,620 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 2.0.5
+2023-12-02 18:42:43,623 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,620 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 2.0.4
+2023-12-02 18:42:43,623 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,621 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 2.0.3
+2023-12-02 18:42:43,624 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,621 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 2.0.2
+2023-12-02 18:42:43,624 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,621 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-H7 3.1.0
+2023-12-02 18:42:43,624 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,621 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.3.0
+2023-12-02 18:42:43,624 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,621 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOF1 3.1.0
+2023-12-02 18:42:43,625 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,621 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE2 3.2.0
+2023-12-02 18:42:43,625 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,621 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SFXS2LP1 3.1.0
+2023-12-02 18:42:43,625 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,621 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-DISPLAY 3.0.0
+2023-12-02 18:42:43,625 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,621 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-F4 1.0.0
+2023-12-02 18:42:43,625 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,621 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 7.0.0
+2023-12-02 18:42:43,625 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,621 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOF1 2.0.0
+2023-12-02 18:42:43,625 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,621 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics HAL Drivers 0.0.0
+2023-12-02 18:42:43,626 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,621 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :emotas I-CUBE-CANOPEN 1.3.0
+2023-12-02 18:42:43,626 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,621 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.22.0
+2023-12-02 18:42:43,626 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,621 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC7 1.0.1
+2023-12-02 18:42:43,626 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,621 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.14.1
+2023-12-02 18:42:43,627 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,621 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC7 1.0.0
+2023-12-02 18:42:43,627 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,621 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.22.1
+2023-12-02 18:42:43,627 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,621 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 4.2.0
+2023-12-02 18:42:43,627 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,621 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-H7 1.0.0
+2023-12-02 18:42:43,627 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,622 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC6 3.0.0
+2023-12-02 18:42:43,628 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,622 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 9.3.0
+2023-12-02 18:42:43,628 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,622 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-EEPRMA1 4.1.0
+2023-12-02 18:42:43,628 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,622 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 7.2.0
+2023-12-02 18:42:43,628 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,622 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-SMARTAG2 1.2.0
+2023-12-02 18:42:43,628 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,622 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-WL 2.0.0
+2023-12-02 18:42:43,628 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,622 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALGOBUILD 1.2.1
+2023-12-02 18:42:43,628 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,622 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-DISPLAY 1.0.0
+2023-12-02 18:42:43,628 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,622 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 1.0.0
+2023-12-02 18:42:43,629 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,622 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 8.1.0
+2023-12-02 18:42:43,629 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,622 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 6.0.0
+2023-12-02 18:42:43,629 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,622 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALGOBUILD 1.2.0
+2023-12-02 18:42:43,629 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,622 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L4 2.0.0
+2023-12-02 18:42:43,629 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,622 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics ThreadX 0.0.2
+2023-12-02 18:42:43,629 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,622 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :WES I-CUBE-Cesium 1.3.0
+2023-12-02 18:42:43,629 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,622 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 6.1.0
+2023-12-02 18:42:43,629 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,622 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.1.2
+2023-12-02 18:42:43,630 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,623 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SFXS2LP1 4.0.0
+2023-12-02 18:42:43,630 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,623 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE2 3.3.0
+2023-12-02 18:42:43,630 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,623 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-DISPLAY 2.2.0
+2023-12-02 18:42:43,630 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,623 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOF1 3.2.0
+2023-12-02 18:42:43,630 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,623 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :wolfSSL I-CUBE-wolfSSL 4.7.0
+2023-12-02 18:42:43,630 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,623 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.2.0
+2023-12-02 18:42:43,630 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,624 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-H7 3.0.0
+2023-12-02 18:42:43,630 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,625 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ISPU 1.1.0
+2023-12-02 18:42:43,631 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,625 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :RoweBots I-CUBE-UNISONRTOS 5.5.0-4
+2023-12-02 18:42:43,631 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,625 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SFXS2LP1 3.0.0
+2023-12-02 18:42:43,631 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,625 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-H7 2.1.0
+2023-12-02 18:42:43,631 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,625 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 3.0.0
+2023-12-02 18:42:43,631 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,625 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 8.0.0
+2023-12-02 18:42:43,631 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,625 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-WB 2.0.0
+2023-12-02 18:42:43,631 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,625 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-FREERTOS 1.0.0
+2023-12-02 18:42:43,631 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,625 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-FREERTOS 1.0.1
+2023-12-02 18:42:43,632 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,625 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.21.1
+2023-12-02 18:42:43,632 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,625 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLEMGR 1.0.0
+2023-12-02 18:42:43,632 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,625 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 9.0.0
+2023-12-02 18:42:43,632 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,626 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 7.3.0
+2023-12-02 18:42:43,632 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,626 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALGOBUILD 1.3.0
+2023-12-02 18:42:43,632 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,626 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L5 1.1.0
+2023-12-02 18:42:43,633 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,626 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-G0 1.1.0
+2023-12-02 18:42:43,633 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,626 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 8.0.1
+2023-12-02 18:42:43,633 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,626 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 3.0.0
+2023-12-02 18:42:43,633 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,626 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :SEGGER I-CUBE-embOS 1.2.0
+2023-12-02 18:42:43,633 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,626 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 5.0.0
+2023-12-02 18:42:43,633 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,626 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics STM32_WPAN 1.0.0
+2023-12-02 18:42:43,634 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,626 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.0.3
+2023-12-02 18:42:43,634 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,626 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 1.0.0
+2023-12-02 18:42:43,634 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,626 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOF1 3.3.1
+2023-12-02 18:42:43,634 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,627 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-G4 2.0.0
+2023-12-02 18:42:43,634 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,627 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.17.0
+2023-12-02 18:42:43,635 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,627 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.1.0
+2023-12-02 18:42:43,635 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,627 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-ASTRA1 1.1.1
+2023-12-02 18:42:43,635 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,627 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :Infineon AIROC-Wi-Fi-Bluetooth-STM32 1.5.1
+2023-12-02 18:42:43,635 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,627 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLEMGR 3.0.0
+2023-12-02 18:42:43,635 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,627 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-ASTRA1 1.1.0
+2023-12-02 18:42:43,636 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,627 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-SIGFOX1 3.2.0
+2023-12-02 18:42:43,636 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,627 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-G4 1.0.0
+2023-12-02 18:42:43,636 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,627 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L4 1.0.0
+2023-12-02 18:42:43,636 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,627 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.16.2
+2023-12-02 18:42:43,636 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,627 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :emotas I-CUBE-CANOPEN 1.1.2
+2023-12-02 18:42:43,637 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,627 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.20.0
+2023-12-02 18:42:43,637 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,628 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 10.0.0
+2023-12-02 18:42:43,637 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,630 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-FREERTOS 1.1.0
+2023-12-02 18:42:43,637 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,630 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 4.0.0
+2023-12-02 18:42:43,637 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,631 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-WL 1.0.0
+2023-12-02 18:42:43,637 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,631 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOF1 1.0.0
+2023-12-02 18:42:43,637 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,631 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :portGmbH I-Cube-SoM-uGOAL 1.1.0
+2023-12-02 18:42:43,638 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,631 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALS 1.0.1
+2023-12-02 18:42:43,638 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,631 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 9.5.0
+2023-12-02 18:42:43,638 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,631 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 7.0.0
+2023-12-02 18:42:43,638 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,631 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics ThreadX 1.0.0
+2023-12-02 18:42:43,638 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,631 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-WB 1.1.0
+2023-12-02 18:42:43,638 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,631 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :SEGGER I-CUBE-embOS 1.3.1
+2023-12-02 18:42:43,638 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,631 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 8.3.0
+2023-12-02 18:42:43,638 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,631 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L5 1.0.0
+2023-12-02 18:42:43,638 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,631 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-EEPRMA1 3.1.0
+2023-12-02 18:42:43,639 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,631 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-EEPRMA1 3.1.1
+2023-12-02 18:42:43,639 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,631 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 5.2.0
+2023-12-02 18:42:43,639 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,631 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-ASTRA1 2.0.0
+2023-12-02 18:42:43,639 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,631 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.16.1
+2023-12-02 18:42:43,639 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:43,631 [INFO] ThirdParty:841 - exiting critical section [change project]
+2023-12-02 18:42:44,436 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:44,436 [INFO] PinOutPanel:1499 - setPackage(No Configuration,No Configuration)
+2023-12-02 18:42:44,438 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:44,438 [INFO] PinOutPanel:1499 - setPackage(STM32G431RBTx,LQFP64)
+2023-12-02 18:42:45,429 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:45,428 [INFO] UtilMem:75 - Before build in PCC Used Memory: 234474808 Bytes (966787072)
+2023-12-02 18:42:46,811 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:46,810 [INFO] UtilMem:75 - After build in PCC Used Memory: 497665336 Bytes (966787072)
+2023-12-02 18:42:46,947 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:46,946 [INFO] ApiDbMcu:507 - Load IP Config File for MotorControl
+2023-12-02 18:42:47,005 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,005 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,005 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,005 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,006 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,005 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,006 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,005 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,007 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,005 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,008 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,006 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,008 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,008 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,011 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,010 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,011 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,011 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,012 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,012 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,013 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,012 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,013 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,013 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,013 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,013 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,015 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,013 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,015 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,014 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,016 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,014 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,016 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,014 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,016 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,015 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,016 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,016 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,016 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,016 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,017 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,016 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,017 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,016 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,017 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,017 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,017 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,017 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,018 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,018 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,019 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,019 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,019 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,019 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,020 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,020 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,020 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,020 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,021 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,020 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,021 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,021 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,022 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,022 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,023 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,022 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,025 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,025 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,026 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,026 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,026 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,026 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,027 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,027 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,027 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,027 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,028 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,028 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,028 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,028 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,029 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,029 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,029 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,029 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,030 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,030 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,030 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,030 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,030 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,030 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,031 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,031 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,032 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,031 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,032 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,032 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,033 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,032 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,033 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,033 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,034 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,034 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,034 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,034 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,035 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,035 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,036 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,036 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,037 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,036 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,038 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,037 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,038 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,038 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,039 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,039 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,040 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,040 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-12-02 18:42:47,621 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,620 [INFO] CADModel:165 - CPN selected for project levelSTM32G431RBT3
+2023-12-02 18:42:47,621 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:47,621 [INFO] CADModel:114 - Register for checkConnection events
+2023-12-02 18:42:48,159 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:48,159 [INFO] OpenFileManager:328 - Restore cursor
+2023-12-02 18:42:48,918 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:48,918 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 436655672 Bytes (966787072)
+2023-12-02 18:42:49,671 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:49,671 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: MotorControl
+2023-12-02 18:42:49,672 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:49,671 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8G4
+2023-12-02 18:42:49,672 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:49,671 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8G4
+2023-12-02 18:42:49,672 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:49,671 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2023-12-02 18:42:49,673 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:49,671 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-12-02 18:42:49,674 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:49,671 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2023-12-02 18:42:49,674 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:49,671 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-12-02 18:42:49,675 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:49,672 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-12-02 18:42:49,675 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:49,672 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-12-02 18:42:49,675 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:49,672 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DMA
+2023-12-02 18:42:49,675 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:49,673 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: CORDIC
+2023-12-02 18:42:49,676 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:49,674 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-12-02 18:42:49,680 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:49,680 [INFO] CodeGenerator:793 - code generatio: config db path: C:\Program Files\STMicroelectronics\STM32Cube\STM32CubeMX_68X\\db\
+2023-12-02 18:42:50,392 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:50,392 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\MXTmpFiles\license.tmp_save
+2023-12-02 18:42:51,152 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:51,152 [INFO] CodeEngine:279 - Generated code: C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\MXTmpFiles\license.tmp
+2023-12-02 18:42:51,508 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:51,507 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\MXTmpFiles\gpio.tmp_save
+2023-12-02 18:42:51,708 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:51,708 [INFO] CodeEngine:279 - Generated code: C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\MXTmpFiles\gpio.tmp
+2023-12-02 18:42:53,565 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:53,565 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2023-12-02 18:42:53,761 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:53,761 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\MXTmpFiles\dma.tmp_save
+2023-12-02 18:42:53,893 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:53,892 [INFO] CodeEngine:279 - Generated code: C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\MXTmpFiles\dma.tmp
+2023-12-02 18:42:53,898 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:53,897 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\MXTmpFiles\dma_GV.tmp_save
+2023-12-02 18:42:53,997 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:53,997 [INFO] CodeEngine:279 - Generated code: C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\MXTmpFiles\dma_GV.tmp
+2023-12-02 18:42:54,081 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:54,081 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2023-12-02 18:42:54,202 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:54,202 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Src\motorcontrol.c_save
+2023-12-02 18:42:54,314 INFO  [LineInfo_to_exitCode.log_LineInfo] Generated code: C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Src\motorcontrol.c
+2023-12-02 18:42:54,332 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:54,332 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Inc\motorcontrol.h_save
+2023-12-02 18:42:54,469 INFO  [LineInfo_to_exitCode.log_LineInfo] Generated code: C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Inc\motorcontrol.h
+2023-12-02 18:42:54,517 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:54,517 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Inc\drive_parameters.h_save
+2023-12-02 18:42:54,696 INFO  [LineInfo_to_exitCode.log_LineInfo] Generated code: C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Inc\drive_parameters.h
+2023-12-02 18:42:54,730 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:54,729 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Inc\mc_tasks.h_save
+2023-12-02 18:42:54,859 INFO  [LineInfo_to_exitCode.log_LineInfo] Generated code: C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Inc\mc_tasks.h
+2023-12-02 18:42:54,889 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:54,889 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Src\mc_api.c_save
+2023-12-02 18:42:55,046 INFO  [LineInfo_to_exitCode.log_LineInfo] Generated code: C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Src\mc_api.c
+2023-12-02 18:42:55,079 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:55,076 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Inc\mc_api.h_save
+2023-12-02 18:42:55,267 INFO  [LineInfo_to_exitCode.log_LineInfo] Generated code: C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Inc\mc_api.h
+2023-12-02 18:42:55,294 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:55,294 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Src\mc_config.c_save
+2023-12-02 18:42:55,465 INFO  [LineInfo_to_exitCode.log_LineInfo] Generated code: C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Src\mc_config.c
+2023-12-02 18:42:55,488 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:55,488 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Inc\mc_config.h_save
+2023-12-02 18:42:55,645 INFO  [LineInfo_to_exitCode.log_LineInfo] Generated code: C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Inc\mc_config.h
+2023-12-02 18:42:55,677 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:55,677 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Inc\mcp_config.h_save
+2023-12-02 18:42:55,816 INFO  [LineInfo_to_exitCode.log_LineInfo] Generated code: C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Inc\mcp_config.h
+2023-12-02 18:42:55,855 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:55,854 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Src\mcp_config.c_save
+2023-12-02 18:42:55,963 INFO  [LineInfo_to_exitCode.log_LineInfo] Generated code: C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Src\mcp_config.c
+2023-12-02 18:42:55,998 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:55,998 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Inc\mc_stm_types.h_save
+2023-12-02 18:42:56,096 INFO  [LineInfo_to_exitCode.log_LineInfo] Generated code: C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Inc\mc_stm_types.h
+2023-12-02 18:42:56,118 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:56,118 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Src\mc_tasks.c_save
+2023-12-02 18:42:56,308 INFO  [LineInfo_to_exitCode.log_LineInfo] Generated code: C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Src\mc_tasks.c
+2023-12-02 18:42:56,340 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:56,340 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Src\pwm_curr_fdbk.c_save
+2023-12-02 18:42:56,448 INFO  [LineInfo_to_exitCode.log_LineInfo] Generated code: C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Src\pwm_curr_fdbk.c
+2023-12-02 18:42:56,485 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:56,484 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Src\regular_conversion_manager.c_save
+2023-12-02 18:42:56,577 INFO  [LineInfo_to_exitCode.log_LineInfo] Generated code: C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Src\regular_conversion_manager.c
+2023-12-02 18:42:56,610 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:56,609 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Inc\regular_conversion_manager.h_save
+2023-12-02 18:42:56,674 INFO  [LineInfo_to_exitCode.log_LineInfo] Generated code: C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Inc\regular_conversion_manager.h
+2023-12-02 18:42:56,688 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:56,688 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Src\mc_math.c_save
+2023-12-02 18:42:56,766 INFO  [LineInfo_to_exitCode.log_LineInfo] Generated code: C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Src\mc_math.c
+2023-12-02 18:42:56,794 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:56,793 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Inc\mc_math.h_save
+2023-12-02 18:42:56,881 INFO  [LineInfo_to_exitCode.log_LineInfo] Generated code: C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Inc\mc_math.h
+2023-12-02 18:42:56,906 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:56,906 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Src\mc_interface.c_save
+2023-12-02 18:42:57,030 INFO  [LineInfo_to_exitCode.log_LineInfo] Generated code: C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Src\mc_interface.c
+2023-12-02 18:42:57,060 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:57,059 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Inc\mc_interface.h_save
+2023-12-02 18:42:57,141 INFO  [LineInfo_to_exitCode.log_LineInfo] Generated code: C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Inc\mc_interface.h
+2023-12-02 18:42:57,158 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:57,157 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Inc\parameters_conversion.h_save
+2023-12-02 18:42:57,278 INFO  [LineInfo_to_exitCode.log_LineInfo] Generated code: C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Inc\parameters_conversion.h
+2023-12-02 18:42:57,306 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:57,306 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Inc\parameters_conversion_g4xx.h_save
+2023-12-02 18:42:57,433 INFO  [LineInfo_to_exitCode.log_LineInfo] Generated code: C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Inc\parameters_conversion_g4xx.h
+2023-12-02 18:42:57,458 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:57,457 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Inc\pmsm_motor_parameters.h_save
+2023-12-02 18:42:57,581 INFO  [LineInfo_to_exitCode.log_LineInfo] Generated code: C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Inc\pmsm_motor_parameters.h
+2023-12-02 18:42:57,617 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:57,617 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Inc\power_stage_parameters.h_save
+2023-12-02 18:42:57,714 INFO  [LineInfo_to_exitCode.log_LineInfo] Generated code: C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Inc\power_stage_parameters.h
+2023-12-02 18:42:57,754 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:57,753 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Src\stm32g4xx_mc_it.c_save
+2023-12-02 18:42:57,872 INFO  [LineInfo_to_exitCode.log_LineInfo] Generated code: C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Src\stm32g4xx_mc_it.c
+2023-12-02 18:42:57,913 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:57,913 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Inc\mc_parameters.h_save
+2023-12-02 18:42:58,022 INFO  [LineInfo_to_exitCode.log_LineInfo] Generated code: C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Inc\mc_parameters.h
+2023-12-02 18:42:58,046 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:58,046 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Src\mc_parameters.c_save
+2023-12-02 18:42:58,225 INFO  [LineInfo_to_exitCode.log_LineInfo] Generated code: C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Src\mc_parameters.c
+2023-12-02 18:42:58,250 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:58,249 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Src\register_interface.c_save
+2023-12-02 18:42:58,384 INFO  [LineInfo_to_exitCode.log_LineInfo] Generated code: C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Src\register_interface.c
+2023-12-02 18:42:58,418 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:58,417 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Inc\mc_perf.h_save
+2023-12-02 18:42:58,521 INFO  [LineInfo_to_exitCode.log_LineInfo] Generated code: C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Inc\mc_perf.h
+2023-12-02 18:42:58,554 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:58,554 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Src\mc_perf.c_save
+2023-12-02 18:42:58,629 INFO  [LineInfo_to_exitCode.log_LineInfo] Generated code: C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Src\mc_perf.c
+2023-12-02 18:42:58,653 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:58,653 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Inc\register_interface.h_save
+2023-12-02 18:42:58,720 INFO  [LineInfo_to_exitCode.log_LineInfo] Generated code: C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Inc\register_interface.h
+2023-12-02 18:42:58,754 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:58,754 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Src\usart_aspep_driver.c_save
+2023-12-02 18:42:58,814 INFO  [LineInfo_to_exitCode.log_LineInfo] Generated code: C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Src\usart_aspep_driver.c
+2023-12-02 18:42:58,829 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:58,829 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Src\mc_configuration_registers.c_save
+2023-12-02 18:42:58,909 INFO  [LineInfo_to_exitCode.log_LineInfo] Generated code: C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Src\mc_configuration_registers.c
+2023-12-02 18:42:58,928 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:58,928 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Inc\mc_configuration_registers.h_save
+2023-12-02 18:42:59,037 INFO  [LineInfo_to_exitCode.log_LineInfo] Generated code: C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Inc\mc_configuration_registers.h
+2023-12-02 18:42:59,063 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:59,063 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Inc\aspep.h_save
+2023-12-02 18:42:59,166 INFO  [LineInfo_to_exitCode.log_LineInfo] Generated code: C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Inc\aspep.h
+2023-12-02 18:42:59,197 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:59,197 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Src\aspep.c_save
+2023-12-02 18:42:59,266 INFO  [LineInfo_to_exitCode.log_LineInfo] Generated code: C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Src\aspep.c
+2023-12-02 18:42:59,304 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:59,304 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Inc\hall_speed_pos_fdbk.h_save
+2023-12-02 18:42:59,387 INFO  [LineInfo_to_exitCode.log_LineInfo] Generated code: C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Inc\hall_speed_pos_fdbk.h
+2023-12-02 18:42:59,403 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:59,402 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Src\hall_speed_pos_fdbk.c_save
+2023-12-02 18:42:59,486 INFO  [LineInfo_to_exitCode.log_LineInfo] Generated code: C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Src\hall_speed_pos_fdbk.c
+2023-12-02 18:42:59,507 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:59,506 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Inc\mc_app_hooks.h_save
+2023-12-02 18:42:59,569 INFO  [LineInfo_to_exitCode.log_LineInfo] Generated code: C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Inc\mc_app_hooks.h
+2023-12-02 18:42:59,589 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:59,589 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Src\mc_app_hooks.c_save
+2023-12-02 18:42:59,665 INFO  [LineInfo_to_exitCode.log_LineInfo] Generated code: C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Src\mc_app_hooks.c
+2023-12-02 18:42:59,721 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:59,721 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Src\stm32g4xx_it.c_save
+2023-12-02 18:42:59,807 INFO  [LineInfo_to_exitCode.log_LineInfo] Generated code: C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Src\stm32g4xx_it.c
+2023-12-02 18:42:59,850 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:59,850 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Inc\stm32g4xx_it.h_save
+2023-12-02 18:42:59,931 INFO  [LineInfo_to_exitCode.log_LineInfo] Generated code: C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Inc\stm32g4xx_it.h
+2023-12-02 18:42:59,976 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:42:59,975 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Src\stm32g4xx_hal_msp.c_save
+2023-12-02 18:43:00,146 INFO  [LineInfo_to_exitCode.log_LineInfo] Generated code: C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Src\stm32g4xx_hal_msp.c
+2023-12-02 18:43:00,170 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:43:00,170 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\MXTmpFiles\system.tmp_save
+2023-12-02 18:43:00,262 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:43:00,262 [INFO] CodeEngine:279 - Generated code: C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\MXTmpFiles\system.tmp
+2023-12-02 18:43:00,278 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:43:00,277 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Inc\stm32g4xx_hal_conf.h_save
+2023-12-02 18:43:00,344 INFO  [LineInfo_to_exitCode.log_LineInfo] Generated code: C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Inc\stm32g4xx_hal_conf.h
+2023-12-02 18:43:00,440 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:43:00,440 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Inc\main.h_save
+2023-12-02 18:43:00,539 INFO  [LineInfo_to_exitCode.log_LineInfo] Generated code: C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Inc\main.h
+2023-12-02 18:43:00,578 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:43:00,578 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Src\main.c_save
+2023-12-02 18:43:00,762 INFO  [LineInfo_to_exitCode.log_LineInfo] Generated code: C:\Users\Owner\STM32CubeIDE\workspace_1.10.1\FOC-Motor-Control-G431-Hall-Sensor\Src\main.c
+2023-12-02 18:43:06,489 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:43:06,488 [INFO] ProjectBuilder:2996 - Time for Copy HAL[0] : 5066mS.
+2023-12-02 18:43:06,505 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:43:06,505 [INFO] ProjectBuilder:4304 - Project Generator version: 3.19.2
+2023-12-02 18:43:06,795 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:43:06,795 [INFO] ConfigFileManager:1483 - The Die is : DIE468
+2023-12-02 18:43:06,835 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:43:06,834 [INFO] ApiDbMcu:507 - Load IP Config File for FATFS
+2023-12-02 18:43:06,848 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:43:06,848 [INFO] ApiDbMcu:507 - Load IP Config File for FREERTOS
+2023-12-02 18:43:06,870 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:43:06,869 [INFO] ApiDbMcu:507 - Load IP Config File for USBPD
+2023-12-02 18:43:06,887 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:43:06,887 [INFO] ApiDbMcu:507 - Load IP Config File for USB_Device
+2023-12-02 18:43:30,567 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:43:30,567 [INFO] ConfigFileManager:2717 - mx.scratch is deleted!
+2023-12-02 18:43:30,568 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:43:30,567 [INFO] ProjectBuilder:4505 - Time for Generating toolchain IDE Files: 24062mS.
+2023-12-02 18:43:45,122 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:43:45,122 [INFO] ProjectBuilder:2867 - Time for Copy CMSIS : 14555mS.
+2023-12-02 18:43:45,667 DEBUG [LineInfo_to_exitCode.log_LineInfo] 2023-12-02 18:43:45,667 [INFO] ProjectBuilder:2867 - Time for Copy CMSIS : 543mS.
+2023-12-02 19:04:45,060 DEBUG [IOCDialogController.lambda$onClose$8] IOCGenerationDialog exists with return code 0
