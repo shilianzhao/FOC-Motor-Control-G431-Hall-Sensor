@@ -1,3 +1,6 @@
+# Don't include files in Debug sub-folder
+STM32CubeIDE/Debug/
+
 # Prerequisites
 *.d
 
