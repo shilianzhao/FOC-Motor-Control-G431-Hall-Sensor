@@ -352,26 +352,27 @@ __weak bool STC_ExecRamp(SpeednTorqCtrl_Handle_t *pHandle, int16_t hTargetFinal,
     if (true == allowedRange)
     {
       /* Interrupts the execution of any previous ramp command */
-      if (0U == hDurationms)
+      if (0U == hDurationms)								// when the duration is 0,
       {
         if (MCM_SPEED_MODE == pHandle->Mode)
         {
           pHandle->SpeedRefUnitExt = ((int32_t)hTargetFinal) * 65536;
         }
-        else
+        else												// torque mode
         {
           pHandle->TorqueRef = ((int32_t)hTargetFinal) * 65536;
         }
         pHandle->RampRemainingStep = 0U;
         pHandle->IncDecAmount = 0;
       }
-      else
+      else													// when the duration is not 0
       {
         /* Store the hTargetFinal to be applied in the last step */
         pHandle->TargetFinal = hTargetFinal;
 
         /* Compute the (wRampRemainingStep) number of steps remaining to complete
         the ramp. */
+        // according the duration (ms),
         wAux = ((uint32_t)hDurationms) * ((uint32_t)pHandle->STCFrequencyHz);
         wAux /= 1000U;
         pHandle->RampRemainingStep = wAux;

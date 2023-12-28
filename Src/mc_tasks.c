@@ -318,6 +318,8 @@ __weak void MC_Scheduler(void)
   * execution at a medium frequency rate (such as the speed controller for instance)
   * are executed here.
   */
+
+
 __weak void TSK_MediumFrequencyTaskM1(void)
 {
   /* USER CODE BEGIN MediumFrequencyTask M1 0 */
@@ -334,7 +336,7 @@ __weak void TSK_MediumFrequencyTaskM1(void)
     {
       switch (Mci[M1].State)
       {
-        case IDLE:
+        case IDLE:									// IDEL: state 1
         {
           if ((MCI_START == Mci[M1].DirectCommand) || (MCI_MEASURE_OFFSETS == Mci[M1].DirectCommand))
           {
@@ -348,9 +350,9 @@ __weak void TSK_MediumFrequencyTaskM1(void)
            {
              /* calibration already done. Enables only TIM channels */
              pwmcHandle[M1]->OffCalibrWaitTimeCounter = 1u;
-             PWMC_CurrentReadingCalibr(pwmcHandle[M1], CRC_EXEC);
-             R3_2_TurnOnLowSides(pwmcHandle[M1],M1_CHARGE_BOOT_CAP_DUTY_CYCLES);
-             TSK_SetChargeBootCapDelayM1(CHARGE_BOOT_CAP_TICKS);
+             PWMC_CurrentReadingCalibr(pwmcHandle[M1], CRC_EXEC);					//
+             R3_2_TurnOnLowSides(pwmcHandle[M1],M1_CHARGE_BOOT_CAP_DUTY_CYCLES);	// turn on low side MOS
+             TSK_SetChargeBootCapDelayM1(CHARGE_BOOT_CAP_TICKS);					// set the charge boot cap time
              Mci[M1].State = CHARGE_BOOT_CAP;
 
            }
@@ -363,7 +365,7 @@ __weak void TSK_MediumFrequencyTaskM1(void)
           break;
         }
 
-        case OFFSET_CALIB:
+        case OFFSET_CALIB:					// state 2: current offset calibration
           {
             if (MCI_STOP == Mci[M1].DirectCommand)
             {
@@ -396,7 +398,7 @@ __weak void TSK_MediumFrequencyTaskM1(void)
             break;
           }
 
-        case CHARGE_BOOT_CAP:
+        case CHARGE_BOOT_CAP:			// state 3: charge boot capacitor
         {
           if (MCI_STOP == Mci[M1].DirectCommand)
           {
@@ -426,7 +428,7 @@ __weak void TSK_MediumFrequencyTaskM1(void)
           break;
         }
 
-        case RUN:
+        case RUN:						// state 4: run
         {
           if (MCI_STOP == Mci[M1].DirectCommand)
           {
@@ -451,7 +453,7 @@ __weak void TSK_MediumFrequencyTaskM1(void)
           break;
         }
 
-        case STOP:
+        case STOP:					// state 5: stop
         {
           if (TSK_StopPermanencyTimeHasElapsedM1())
           {
@@ -469,7 +471,7 @@ __weak void TSK_MediumFrequencyTaskM1(void)
           break;
         }
 
-        case FAULT_OVER:
+        case FAULT_OVER:			// state 7:
         {
           if (MCI_ACK_FAULTS == Mci[M1].DirectCommand)
           {
@@ -485,7 +487,7 @@ __weak void TSK_MediumFrequencyTaskM1(void)
 
         case FAULT_NOW:
         {
-          Mci[M1].State = FAULT_OVER;
+          Mci[M1].State = FAULT_OVER;// state 6:
         }
         break;
 
@@ -587,7 +589,7 @@ __weak void FOC_CalcCurrRef(uint8_t bMotor)
   /* USER CODE END FOC_CalcCurrRef 0 */
   if (INTERNAL == FOCVars[bMotor].bDriveInput)
   {
-    FOCVars[bMotor].hTeref = STC_CalcTorqueReference(pSTC[bMotor]);
+    FOCVars[bMotor].hTeref = STC_CalcTorqueReference(pSTC[bMotor]);		// get torque reference
     FOCVars[bMotor].Iqdref.q = FOCVars[bMotor].hTeref;
 
   }

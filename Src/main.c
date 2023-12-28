@@ -73,7 +73,9 @@ static void MX_NVIC_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+//State_t state_test1;
+//State_t state_test2;
+//MCI_Handle *pMCIHandle;
 /* USER CODE END 0 */
 
 /**
@@ -116,17 +118,25 @@ int main(void)
   /* Initialize interrupts */
   MX_NVIC_Init();
   /* USER CODE BEGIN 2 */
+
+  //state_test1 = MCI_GetSTMState(pMCIHandle);
+
   HAL_Delay(500);
+  MC_ProgramSpeedRampMotor1(400/6, 200);
+  MC_ProgramSpeedRampMotor1(1000/6, 200);
   MC_StartMotor1();							  // default speed = 1000 RPM
   HAL_Delay(10000);
-  MC_ProgramSpeedRampMotor1(1200/6, 200);     // speed parameter unit is 0.1Hz, (1200 RPM/60)*10 = 200 (0.1Hz)
+  MC_ProgramSpeedRampMotor1(600/6, 200);
+ // MC_ProgramSpeedRampMotor1(1200/6, 200);     // speed parameter unit is 0.1Hz, (1200 RPM/60)*10 = 200 (0.1Hz)
   									          // set speed to 1200 RPM
-  HAL_Delay(10000);
-  MC_ProgramSpeedRampMotor1(400/6, 1000);
-  HAL_Delay(10000);
-  MC_ProgramSpeedRampMotor1(-400/6, 1000);
-  HAL_Delay(10000);
-  MC_StopMotor1();
+  //state_test2 = MCI_GetSTMState(pMCIHandle);
+
+//  HAL_Delay(10000);
+//  MC_ProgramSpeedRampMotor1(400/6, 1000);
+//  HAL_Delay(10000);
+//  MC_ProgramSpeedRampMotor1(-400/6, 1000);
+//  HAL_Delay(10000);
+//  MC_StopMotor1();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -254,7 +264,7 @@ static void MX_ADC1_Init(void)
   hadc1.Init.NbrOfConversion = 1;
   hadc1.Init.DiscontinuousConvMode = DISABLE;
   hadc1.Init.ExternalTrigConv = ADC_SOFTWARE_START;
-  hadc1.Init.ExternalTrigConvEdge = ADC_EXTERNALTRIGCONVEDGE_NONE;
+  hadc1.Init.ExternalTrigConvEdge = ADC_EXTERNALTRIGCONVEDGE_NONE;		// No external trigger
   hadc1.Init.DMAContinuousRequests = DISABLE;
   hadc1.Init.Overrun = ADC_OVR_DATA_PRESERVED;
   hadc1.Init.OversamplingMode = DISABLE;
@@ -283,7 +293,7 @@ static void MX_ADC1_Init(void)
   sConfigInjected.InjectedDiscontinuousConvMode = DISABLE;
   sConfigInjected.AutoInjectedConv = DISABLE;
   sConfigInjected.QueueInjectedContext = DISABLE;
-  sConfigInjected.ExternalTrigInjecConv = ADC_EXTERNALTRIGINJEC_T1_TRGO;
+  sConfigInjected.ExternalTrigInjecConv = ADC_EXTERNALTRIGINJEC_T1_TRGO;		// real trigger
   sConfigInjected.ExternalTrigInjecConvEdge = ADC_EXTERNALTRIGINJECCONV_EDGE_RISING;
   sConfigInjected.InjecOversamplingMode = DISABLE;
   if (HAL_ADCEx_InjectedConfigChannel(&hadc1, &sConfigInjected) != HAL_OK)
@@ -439,12 +449,12 @@ static void MX_TIM1_Init(void)
 
   /* USER CODE END TIM1_Init 1 */
   htim1.Instance = TIM1;
-  htim1.Init.Prescaler = ((TIM_CLOCK_DIVIDER) - 1);
-  htim1.Init.CounterMode = TIM_COUNTERMODE_CENTERALIGNED1;
-  htim1.Init.Period = ((PWM_PERIOD_CYCLES) / 2);
-  htim1.Init.ClockDivision = TIM_CLOCKDIVISION_DIV2;
-  htim1.Init.RepetitionCounter = (REP_COUNTER);
-  htim1.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+  htim1.Init.Prescaler = ((TIM_CLOCK_DIVIDER) - 1);			// 0, Prescaler = 1
+  htim1.Init.CounterMode = TIM_COUNTERMODE_CENTERALIGNED1;	// Center-aligned mode 1
+  htim1.Init.Period = ((PWM_PERIOD_CYCLES) / 2);			// half because of Center-aligned mode
+  htim1.Init.ClockDivision = TIM_CLOCKDIVISION_DIV2;		// tDTS = 2*tCK_INT, dead time, filter
+  htim1.Init.RepetitionCounter = (REP_COUNTER);				// 1, FOC execution rate in number of PWM cycles
+  htim1.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;	// TIM1 auto-reload preload is disable
   if (HAL_TIM_Base_Init(&htim1) != HAL_OK)
   {
     Error_Handler();
@@ -453,16 +463,17 @@ static void MX_TIM1_Init(void)
   {
     Error_Handler();
   }
-  sSlaveConfig.SlaveMode = TIM_SLAVEMODE_TRIGGER;
-  sSlaveConfig.InputTrigger = TIM_TS_ITR1;
+  sSlaveConfig.SlaveMode = TIM_SLAVEMODE_TRIGGER;			// SMS=110: Trigger Mode in SMCR register
+  sSlaveConfig.InputTrigger = TIM_TS_ITR1;					// Internal Trigger 1 (tim_itr1)  DO we use it? who connect to it?
+  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	// startTimers() trigger TIM1 by TIM2, once TIM1 starts, then trigger this.
   if (HAL_TIM_SlaveConfigSynchro(&htim1, &sSlaveConfig) != HAL_OK)
   {
     Error_Handler();
   }
-  sMasterConfig.MasterOutputTrigger = TIM_TRGO_OC4REF;
-  sMasterConfig.MasterOutputTrigger2 = TIM_TRGO2_RESET;
-  sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
-  if (HAL_TIMEx_MasterConfigSynchronization(&htim1, &sMasterConfig) != HAL_OK)
+  sMasterConfig.MasterOutputTrigger = TIM_TRGO_OC4REF;		// OC4REF signal is used as trigger output(TRGO)
+  sMasterConfig.MasterOutputTrigger2 = TIM_TRGO2_RESET;		// TIMx_EGR.UG bit is used as trigger output (TRGO2). RESET means not using
+  sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;	// MSM = 0, no master mode, is slave mode.
+  if (HAL_TIMEx_MasterConfigSynchronization(&htim1, &sMasterConfig) != HAL_OK) 		// modify TIM1 CR2 =0x70, SMCR = 0x16
   {
     Error_Handler();
   }
@@ -473,8 +484,8 @@ static void MX_TIM1_Init(void)
   {
     Error_Handler();
   }
-  sConfigOC.OCMode = TIM_OCMODE_PWM1;
-  sConfigOC.Pulse = ((PWM_PERIOD_CYCLES) / 4);
+  sConfigOC.OCMode = TIM_OCMODE_PWM1;					// OC mode
+  sConfigOC.Pulse = ((PWM_PERIOD_CYCLES) / 4);			//
   sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
   sConfigOC.OCNPolarity = TIM_OCNPOLARITY_HIGH;
   sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
@@ -492,9 +503,9 @@ static void MX_TIM1_Init(void)
   {
     Error_Handler();
   }
-  sConfigOC.OCMode = TIM_OCMODE_PWM2;
-  sConfigOC.Pulse = (((PWM_PERIOD_CYCLES) / 2) - (HTMIN));
-  if (HAL_TIM_PWM_ConfigChannel(&htim1, &sConfigOC, TIM_CHANNEL_4) != HAL_OK)
+  sConfigOC.OCMode = TIM_OCMODE_PWM2;					//
+  sConfigOC.Pulse = (((PWM_PERIOD_CYCLES) / 2) - (HTMIN));		// trigger the ADC to sample
+  if (HAL_TIM_PWM_ConfigChannel(&htim1, &sConfigOC, TIM_CHANNEL_4) != HAL_OK) //
   {
     Error_Handler();
   }
@@ -502,7 +513,7 @@ static void MX_TIM1_Init(void)
   sBreakDeadTimeConfig.OffStateIDLEMode = TIM_OSSI_ENABLE;
   sBreakDeadTimeConfig.LockLevel = TIM_LOCKLEVEL_1;
   sBreakDeadTimeConfig.DeadTime = 0;
-  sBreakDeadTimeConfig.BreakState = TIM_BREAK_ENABLE;
+  sBreakDeadTimeConfig.BreakState = TIM_BREAK_ENABLE;			// do not use break function
   sBreakDeadTimeConfig.BreakPolarity = TIM_BREAKPOLARITY_HIGH;
   sBreakDeadTimeConfig.BreakFilter = 3;
   sBreakDeadTimeConfig.BreakAFMode = TIM_BREAK_AFMODE_INPUT;
@@ -564,8 +575,8 @@ static void MX_TIM3_Init(void)
   {
     Error_Handler();
   }
-  sMasterConfig.MasterOutputTrigger = TIM_TRGO_OC2REF;
-  sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+  sMasterConfig.MasterOutputTrigger = TIM_TRGO_OC2REF;			// do what?? in next step
+  sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;	 // MSM = 0, no master mode, is slave mode.
   if (HAL_TIMEx_MasterConfigSynchronization(&htim3, &sMasterConfig) != HAL_OK)
   {
     Error_Handler();

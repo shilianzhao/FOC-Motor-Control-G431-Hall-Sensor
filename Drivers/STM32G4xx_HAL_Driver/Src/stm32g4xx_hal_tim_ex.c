@@ -2203,10 +2203,13 @@ HAL_StatusTypeDef HAL_TIMEx_MasterConfigSynchronization(TIM_HandleTypeDef *htim,
   htim->State = HAL_TIM_STATE_BUSY;
 
   /* Get the TIMx CR2 register value */
-  tmpcr2 = htim->Instance->CR2;
+  tmpcr2 = htim->Instance->CR2;				// 0, reset value is also 0.
 
   /* Get the TIMx SMCR register value */
-  tmpsmcr = htim->Instance->SMCR;
+  tmpsmcr = htim->Instance->SMCR;				  // 22 = 0x16,
+  	  	  	  	  	  	  	  	  	  	  	  	  // TS[4:0] = 00001, Internal Trigger 1 (tim_itr1)
+  	  	  	  	  	  	  	  	  	  	  	  	  // SMS[3:0] = 0110, Trigger Mode, The counter starts at a rising edge of the trigger tim_trgi
+  	  	  	  	  	  	  	  	  	  	  	  	  // (but it is not reset). Only the start of the counter is controlled.
 
   /* If the timer supports ADC synchronization through TRGO2, set the master mode selection 2 */
   if (IS_TIM_TRGO2_INSTANCE(htim->Instance))
@@ -2215,28 +2218,31 @@ HAL_StatusTypeDef HAL_TIMEx_MasterConfigSynchronization(TIM_HandleTypeDef *htim,
     assert_param(IS_TIM_TRGO2_SOURCE(sMasterConfig->MasterOutputTrigger2));
 
     /* Clear the MMS2 bits */
-    tmpcr2 &= ~TIM_CR2_MMS2;
+    tmpcr2 &= ~TIM_CR2_MMS2;						// 0
     /* Select the TRGO2 source*/
-    tmpcr2 |= sMasterConfig->MasterOutputTrigger2;
+    tmpcr2 |= sMasterConfig->MasterOutputTrigger2; 	// 0, MMS2[3:0] = 0000, Reset, tim_trgo2 is chosen
   }
 
   /* Reset the MMS Bits */
-  tmpcr2 &= ~TIM_CR2_MMS;
+  tmpcr2 &= ~TIM_CR2_MMS;				// TIM_CR2_MMS = 0x2000070,
+
   /* Select the TRGO source */
-  tmpcr2 |=  sMasterConfig->MasterOutputTrigger;
+  tmpcr2 |=  sMasterConfig->MasterOutputTrigger;		// MMS[3:0] = 0111, Compare - tim_oc4refc signal is used as trigger output (tim_trgo)
 
   /* Update TIMx CR2 */
-  htim->Instance->CR2 = tmpcr2;
+  htim->Instance->CR2 = tmpcr2;							// 0x70:
+  	  	  	  	  	  	  	  	  	  	  	  	  	  	// MMS[3:0] = 0111, tim_trgo, Compare - tim_oc4refc signal is used as trigger output (tim_trgo)
+  	  	  	  	  	  	  	  	  	  	  	  	  	  	// MMS2[3:0] = 0000, tim_trgo2, is reset. means the trgo2 is not used
 
   if (IS_TIM_SLAVE_INSTANCE(htim->Instance))
   {
     /* Reset the MSM Bit */
-    tmpsmcr &= ~TIM_SMCR_MSM;
+    tmpsmcr &= ~TIM_SMCR_MSM;						// 0x16
     /* Set master mode */
-    tmpsmcr |= sMasterConfig->MasterSlaveMode;
+    tmpsmcr |= sMasterConfig->MasterSlaveMode;		// MSM = 0, means not master mode, is slave mode.
 
     /* Update TIMx SMCR */
-    htim->Instance->SMCR = tmpsmcr;
+    htim->Instance->SMCR = tmpsmcr;					// 0x16
   }
 
   /* Change the htim state */

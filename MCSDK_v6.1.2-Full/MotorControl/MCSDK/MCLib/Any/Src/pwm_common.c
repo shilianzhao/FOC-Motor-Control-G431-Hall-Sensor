@@ -42,7 +42,7 @@
   * with CNT, ARR, REP RATE and trigger correctly set (these settings are
   * usually performed in the Init method accordingly with the configuration)
   */
-__weak void startTimers(void)
+__weak void startTimers(void)					// usually TIM1 is for motor1, TIM8 is for motor2, if two motor are controlled
 {
   uint32_t isTIM2ClockOn;
   uint32_t trigOut;
@@ -51,16 +51,17 @@ __weak void startTimers(void)
   if ((uint32_t)0 == isTIM2ClockOn)
   {
     /* Temporary Enable TIM2 clock if not already on */
-    LL_APB1_GRP1_EnableClock(LL_APB1_GRP1_PERIPH_TIM2);
-    LL_TIM_GenerateEvent_UPDATE(TIM2);
-    LL_APB1_GRP1_DisableClock(LL_APB1_GRP1_PERIPH_TIM2);
+    LL_APB1_GRP1_EnableClock(LL_APB1_GRP1_PERIPH_TIM2);			// enable TIM2
+    LL_TIM_GenerateEvent_UPDATE(TIM2);							// create update event, update register settings, and trigger TRGO output
+    LL_APB1_GRP1_DisableClock(LL_APB1_GRP1_PERIPH_TIM2);		// disable TIM2
   }
   else
   {
-    trigOut = LL_TIM_ReadReg(TIM2, CR2) & TIM_CR2_MMS;
-    LL_TIM_SetTriggerOutput(TIM2, LL_TIM_TRGO_UPDATE);
-    LL_TIM_GenerateEvent_UPDATE(TIM2);
-    LL_TIM_SetTriggerOutput(TIM2, trigOut);
+	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	// if this TIM2 is used by other purpose
+    trigOut = LL_TIM_ReadReg(TIM2, CR2) & TIM_CR2_MMS;			// save previous settings
+    LL_TIM_SetTriggerOutput(TIM2, LL_TIM_TRGO_UPDATE);			// set TRGO as update event
+    LL_TIM_GenerateEvent_UPDATE(TIM2);							// create update event, update register settings, and trigger TRGO output
+    LL_TIM_SetTriggerOutput(TIM2, trigOut);						// restore previous settings
   }
 }
 #endif

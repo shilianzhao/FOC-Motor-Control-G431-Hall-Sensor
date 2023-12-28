@@ -631,15 +631,15 @@ __weak void MCI_ExecBufferedCommands(MCI_Handle_t *pHandle)
       bool commandHasBeenExecuted = false;
       switch (pHandle->lastCommand)
       {
-        case MCI_CMD_EXECSPEEDRAMP:
+        case MCI_CMD_EXECSPEEDRAMP:						// speed ramp
         {
           pHandle->pFOCVars->bDriveInput = INTERNAL;
           STC_SetControlMode(pHandle->pSTC, MCM_SPEED_MODE);
-          commandHasBeenExecuted = STC_ExecRamp(pHandle->pSTC, pHandle->hFinalSpeed, pHandle->hDurationms);
+          commandHasBeenExecuted = STC_ExecRamp(pHandle->pSTC, pHandle->hFinalSpeed, pHandle->hDurationms);   // calculate the final speed or incremental
           break;
         }
 
-        case MCI_CMD_EXECTORQUERAMP:
+        case MCI_CMD_EXECTORQUERAMP:					// torque ramp
         {
           pHandle->pFOCVars->bDriveInput = INTERNAL;
           STC_SetControlMode(pHandle->pSTC, MCM_TORQUE_MODE);

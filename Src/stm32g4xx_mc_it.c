@@ -89,7 +89,7 @@ void ADC1_2_IRQHandler(void)
   // Clear Flags M1
   LL_ADC_ClearFlag_JEOS( ADC1 );
 
-  (void)TSK_HighFrequencyTask();
+  (void)TSK_HighFrequencyTask();		// execute high frequency task (FOC control)
 
  /* USER CODE BEGIN HighFreq */
 
@@ -112,7 +112,7 @@ __attribute__((section (".ccmram")))
   * @param  None
   * @retval None
   */
-void TIMx_UP_M1_IRQHandler(void)
+void TIMx_UP_M1_IRQHandler(void)		// TIM1
 {
  /* USER CODE BEGIN TIMx_UP_M1_IRQn 0 */
 
@@ -161,7 +161,8 @@ void TIMx_BRK_M1_IRQHandler(void)
   * @param  None
   * @retval None
   */
-void SPD_TIM_M1_IRQHandler(void)
+	// Timer 3
+void SPD_TIM_M1_IRQHandler(void)				// up-event is need to be recorded for modifying the pre_scaler
 {
   /* USER CODE BEGIN SPD_TIM_M1_IRQn 0 */
 
@@ -182,7 +183,7 @@ void SPD_TIM_M1_IRQHandler(void)
   }
 
   /* HALL Timer CC1 IT always enabled, no need to check enable CC1 state */
-  if (LL_TIM_IsActiveFlag_CC1 (HALL_M1.TIMx) != 0U)
+  if (LL_TIM_IsActiveFlag_CC1 (HALL_M1.TIMx) != 0U)			// compare and capture
   {
     LL_TIM_ClearFlag_CC1(HALL_M1.TIMx);
     (void)HALL_TIMx_CC_IRQHandler(&HALL_M1);
@@ -332,7 +333,7 @@ static uint8_t SystickDividerCounter = SYSTICK_DIVIDER;
   /* USER CODE END SysTick_IRQn 0 */
   if (SystickDividerCounter == SYSTICK_DIVIDER)
   {
-    HAL_IncTick();
+    HAL_IncTick();						// 1 KHz
     HAL_SYSTICK_IRQHandler();
     SystickDividerCounter = 0;
   }
@@ -341,7 +342,7 @@ static uint8_t SystickDividerCounter = SYSTICK_DIVIDER;
 
   /* USER CODE BEGIN SysTick_IRQn 1 */
   /* USER CODE END SysTick_IRQn 1 */
-    MC_RunMotorControlTasks();
+    MC_RunMotorControlTasks();		// 2KHz, state machine: motor speed etc., medium task
 
   /* USER CODE BEGIN SysTick_IRQn 2 */
   /* USER CODE END SysTick_IRQn 2 */
