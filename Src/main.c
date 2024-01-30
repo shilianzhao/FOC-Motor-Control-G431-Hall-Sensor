@@ -121,12 +121,12 @@ int main(void)
 
   //state_test1 = MCI_GetSTMState(pMCIHandle);
 
-  HAL_Delay(500);
-  MC_ProgramSpeedRampMotor1(400/6, 200);
-  MC_ProgramSpeedRampMotor1(1000/6, 200);
-  MC_StartMotor1();							  // default speed = 1000 RPM
-  HAL_Delay(10000);
-  MC_ProgramSpeedRampMotor1(600/6, 200);
+  //HAL_Delay(500);
+  //MC_ProgramSpeedRampMotor1(400/6, 200);
+  //MC_ProgramSpeedRampMotor1(1000/6, 200);
+  //MC_StartMotor1();							  // default speed = 1000 RPM
+  //HAL_Delay(10000);
+  //MC_ProgramSpeedRampMotor1(600/6, 200);
  // MC_ProgramSpeedRampMotor1(1200/6, 200);     // speed parameter unit is 0.1Hz, (1200 RPM/60)*10 = 200 (0.1Hz)
   									          // set speed to 1200 RPM
   //state_test2 = MCI_GetSTMState(pMCIHandle);
@@ -137,6 +137,8 @@ int main(void)
 //  MC_ProgramSpeedRampMotor1(-400/6, 1000);
 //  HAL_Delay(10000);
 //  MC_StopMotor1();
+  MC_StartMotor1();
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -144,6 +146,18 @@ int main(void)
   while (1)
   {
       // wait for User Button pressed to start or stop motor
+
+	  MC_ProgramSpeedRampMotor1(700/6, 3000);
+	  MC_StartMotor1();
+	  HAL_Delay(8000);
+	  MC_StopMotor1();
+	  HAL_Delay(2000);
+
+	  MC_ProgramSpeedRampMotor1(-700/6, 3000);
+	  MC_StartMotor1();
+	  HAL_Delay(8000);
+	  MC_StopMotor1();
+	  HAL_Delay(2000);
 
 	  /* USER CODE END WHILE */
 
